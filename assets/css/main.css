@@ -1707,14 +1707,14 @@
 		}
 
 		.image.avatar48 {
-			width: 100px;
-			height: 100px;
+			width: 96px;
+			height: 96px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 100px;
-				height: 100px;
+				width: 96px;
+				height: 96px;
 			}
 
 		.image.fit {
