@@ -1,52 +1,54 @@
 /*
-	Prologue by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
+/* Type */
 
-	section > .last-child, section.last-child, article > .last-child, article.last-child {
-		margin-bottom: 0;
-	}
-
-/* Form */
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+	body, input, select, textarea {
+		color: #ffffff;
 	}
 
 /* Button */
 
-	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
+	input[type="button"],
 	button,
 	.button {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		position: relative;
 	}
 
-/* Header */
-
-	#nav ul li a {
-		color: #888;
-	}
-
-		#nav ul li a.active {
-			background: #1C2022;
+		input[type="submit"]:after,
+		input[type="reset"]:after,
+		input[type="button"]:after,
+		button:after,
+		.button:after {
+			display: none;
 		}
 
-	#headerToggle .toggle {
-		background-color: #888;
+/* Features */
+
+	.features {
+		border: solid 1px;
 	}
 
-/* Main */
+/* Form */
 
-	#main > section.cover {
-		background-position: auto;
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		background: transparent;
+		border: solid 1px;
+	}
+
+/* Split */
+
+	.split.style1 > :first-child {
+		padding-right: 2em;
+		width: 70%;
 	}
