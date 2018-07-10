@@ -1,210 +1,262 @@
 /*
-	Hyperspace by HTML5 UP
+	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+	var	$window = $(window),
+		$head = $('head'),
+		$body = $('body');
 
-	$(function() {
+	// Breakpoints.
+		breakpoints({
+			xlarge:   [ '1281px',  '1680px' ],
+			large:    [ '981px',   '1280px' ],
+			medium:   [ '737px',   '980px'  ],
+			small:    [ '481px',   '736px'  ],
+			xsmall:   [ '361px',   '480px'  ],
+			xxsmall:  [ null,      '360px'  ],
+			'xlarge-to-max':    '(min-width: 1681px)',
+			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
+		});
 
-		var	$window = $(window),
-			$body = $('body'),
-			$sidebar = $('#sidebar');
+	// Stops animations/transitions until the page has ...
 
-		// Hack: Enable IE flexbox workarounds.
-			if (skel.vars.IEVersion < 12)
-				$body.addClass('is-ie');
-
-		// Disable animations/transitions until the page has loaded.
-			if (skel.canUse('transition'))
-				$body.addClass('is-loading');
-
+		// ... loaded.
 			$window.on('load', function() {
 				window.setTimeout(function() {
-					$body.removeClass('is-loading');
+					$body.removeClass('is-preload');
 				}, 100);
 			});
 
-		// Forms.
+		// ... stopped resizing.
+			var resizeTimeout;
 
-			// Fix: Placeholder polyfill.
-				$('form').placeholder();
+			$window.on('resize', function() {
 
-			// Hack: Activate non-input submits.
-				$('form').on('click', '.submit', function(event) {
+				// Mark as resizing.
+					$body.addClass('is-resizing');
 
-					// Stop propagation, default.
-						event.stopPropagation();
-						event.preventDefault();
+				// Unmark after delay.
+					clearTimeout(resizeTimeout);
 
-					// Submit form.
-						$(this).parents('form').submit();
+					resizeTimeout = setTimeout(function() {
+						$body.removeClass('is-resizing');
+					}, 100);
+
+			});
+
+	// Fixes.
+
+		// Object fit images.
+			if (!browser.canUse('object-fit')
+			||	browser.name == 'safari')
+				$('.image.object').each(function() {
+
+					var $this = $(this),
+						$img = $this.children('img');
+
+					// Hide original image.
+						$img.css('opacity', '0');
+
+					// Set background.
+						$this
+							.css('background-image', 'url("' + $img.attr('src') + '")')
+							.css('background-size', $img.css('object-fit') ? $img.css('object-fit') : 'cover')
+							.css('background-position', $img.css('object-position') ? $img.css('object-position') : 'center');
 
 				});
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
+	// Sidebar.
+		var $sidebar = $('#sidebar'),
+			$sidebar_inner = $sidebar.children('.inner');
+
+		// Inactive by default on <= large.
+			breakpoints.on('<=large', function() {
+				$sidebar.addClass('inactive');
 			});
 
-		// Sidebar.
-			if ($sidebar.length > 0) {
+			breakpoints.on('>large', function() {
+				$sidebar.removeClass('inactive');
+			});
 
-				var $sidebar_a = $sidebar.find('a');
+		// Hack: Workaround for Chrome/Android scrollbar position bug.
+			if (browser.os == 'android'
+			&&	browser.name == 'chrome')
+				$('<style>#sidebar .inner::-webkit-scrollbar { display: none; }</style>')
+					.appendTo($head);
 
-				$sidebar_a
-					.addClass('scrolly')
-					.on('click', function() {
+		// Toggle.
+			$('<a href="#sidebar" class="toggle">Toggle</a>')
+				.appendTo($sidebar)
+				.on('click', function(event) {
 
-						var $this = $(this);
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
 
-						// External link? Bail.
-							if ($this.attr('href').charAt(0) != '#')
+					// Toggle.
+						$sidebar.toggleClass('inactive');
+
+				});
+
+		// Events.
+
+			// Link clicks.
+				$sidebar.on('click', 'a', function(event) {
+
+					// >large? Bail.
+						if (breakpoints.active('>large'))
+							return;
+
+					// Vars.
+						var $a = $(this),
+							href = $a.attr('href'),
+							target = $a.attr('target');
+
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+
+					// Check URL.
+						if (!href || href == '#' || href == '')
+							return;
+
+					// Hide sidebar.
+						$sidebar.addClass('inactive');
+
+					// Redirect to href.
+						setTimeout(function() {
+
+							if (target == '_blank')
+								window.open(href);
+							else
+								window.location.href = href;
+
+						}, 500);
+
+				});
+
+			// Prevent certain events inside the panel from bubbling.
+				$sidebar.on('click touchend touchstart touchmove', function(event) {
+
+					// >large? Bail.
+						if (breakpoints.active('>large'))
+							return;
+
+					// Prevent propagation.
+						event.stopPropagation();
+
+				});
+
+			// Hide panel on body click/tap.
+				$body.on('click touchend', function(event) {
+
+					// >large? Bail.
+						if (breakpoints.active('>large'))
+							return;
+
+					// Deactivate.
+						$sidebar.addClass('inactive');
+
+				});
+
+		// Scroll lock.
+		// Note: If you do anything to change the height of the sidebar's content, be sure to
+		// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
+
+			$window.on('load.sidebar-lock', function() {
+
+				var sh, wh, st;
+
+				// Reset scroll position to 0 if it's 1.
+					if ($window.scrollTop() == 1)
+						$window.scrollTop(0);
+
+				$window
+					.on('scroll.sidebar-lock', function() {
+
+						var x, y;
+
+						// <=large? Bail.
+							if (breakpoints.active('<=large')) {
+
+								$sidebar_inner
+									.data('locked', 0)
+									.css('position', '')
+									.css('top', '');
+
 								return;
 
-						// Deactivate all links.
-							$sidebar_a.removeClass('active');
+							}
 
-						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-							$this
-								.addClass('active')
-								.addClass('active-locked');
+						// Calculate positions.
+							x = Math.max(sh - wh, 0);
+							y = Math.max(0, $window.scrollTop() - x);
+
+						// Lock/unlock.
+							if ($sidebar_inner.data('locked') == 1) {
+
+								if (y <= 0)
+									$sidebar_inner
+										.data('locked', 0)
+										.css('position', '')
+										.css('top', '');
+								else
+									$sidebar_inner
+										.css('top', -1 * x);
+
+							}
+							else {
+
+								if (y > 0)
+									$sidebar_inner
+										.data('locked', 1)
+										.css('position', 'fixed')
+										.css('top', -1 * x);
+
+							}
 
 					})
-					.each(function() {
+					.on('resize.sidebar-lock', function() {
 
-						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
+						// Calculate heights.
+							wh = $window.height();
+							sh = $sidebar_inner.outerHeight() + 30;
 
-						// No section for this link? Bail.
-							if ($section.length < 1)
-								return;
+						// Trigger scroll.
+							$window.trigger('scroll.sidebar-lock');
 
-						// Scrollex.
-							$section.scrollex({
-								mode: 'middle',
-								top: '-20vh',
-								bottom: '-20vh',
-								initialize: function() {
-
-									// Deactivate section.
-										if (skel.canUse('transition'))
-											$section.addClass('inactive');
-
-								},
-								enter: function() {
-
-									// Activate section.
-										$section.removeClass('inactive');
-
-									// No locked links? Deactivate all links and activate this section's one.
-										if ($sidebar_a.filter('.active-locked').length == 0) {
-
-											$sidebar_a.removeClass('active');
-											$this.addClass('active');
-
-										}
-
-									// Otherwise, if this section's link is the one that's locked, unlock it.
-										else if ($this.hasClass('active-locked'))
-											$this.removeClass('active-locked');
-
-								}
-							});
-
-					});
-
-			}
-
-		// Scrolly.
-			$('.scrolly').scrolly({
-				speed: 1000,
-				offset: function() {
-
-					// If <=large, >small, and sidebar is present, use its height as the offset.
-						if (skel.breakpoint('large').active
-						&&	!skel.breakpoint('small').active
-						&&	$sidebar.length > 0)
-							return $sidebar.height();
-
-					return 0;
-
-				}
-			});
-
-		// Spotlights.
-			$('.spotlights > section')
-				.scrollex({
-					mode: 'middle',
-					top: '-10vh',
-					bottom: '-10vh',
-					initialize: function() {
-
-						// Deactivate section.
-							if (skel.canUse('transition'))
-								$(this).addClass('inactive');
-
-					},
-					enter: function() {
-
-						// Activate section.
-							$(this).removeClass('inactive');
-
-					}
-				})
-				.each(function() {
-
-					var	$this = $(this),
-						$image = $this.find('.image'),
-						$img = $image.find('img'),
-						x;
-
-					// Assign image.
-						$image.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					// Set background position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
-
-					// Hide <img>.
-						$img.hide();
+					})
+					.trigger('resize.sidebar-lock');
 
 				});
 
-		// Features.
-			if (skel.canUse('transition'))
-				$('.features')
-					.scrollex({
-						mode: 'middle',
-						top: '-20vh',
-						bottom: '-20vh',
-						initialize: function() {
+	// Menu.
+		var $menu = $('#menu'),
+			$menu_openers = $menu.children('ul').find('.opener');
 
-							// Deactivate section.
-								$(this).addClass('inactive');
+		// Openers.
+			$menu_openers.each(function() {
 
-						},
-						enter: function() {
+				var $this = $(this);
 
-							// Activate section.
-								$(this).removeClass('inactive');
+				$this.on('click', function(event) {
 
-						}
-					});
+					// Prevent default.
+						event.preventDefault();
 
-	});
+					// Toggle.
+						$menu_openers.not($this).removeClass('active');
+						$this.toggleClass('active');
+
+					// Trigger resize (sidebar lock).
+						$window.triggerHandler('resize.sidebar-lock');
+
+				});
+
+			});
 
 })(jQuery);
