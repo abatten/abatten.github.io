@@ -2238,7 +2238,7 @@ input, select, textarea {
 
 /* Icons */
 
-/*	ul.icons {
+	ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
@@ -2246,7 +2246,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 1em 0 2em;
+			padding: 0 1em 0 0em;
 		}
 
 			ul.icons li:last-child {
@@ -2258,8 +2258,8 @@ input, select, textarea {
 			}
 
 				ul.icons li .icon:before {
-					font-size: 3.25em;
-				}*/
+					font-size: 2.25em;
+				}
 
 /*		ul.icons {
 
@@ -2270,29 +2270,24 @@ input, select, textarea {
 			width: 10px;
 		}
 */
-		ul.icons li:hover{
-			color:#000000;
 
-		}
-
-		ul.icons li:before{
-			color:#000000;
-
-		}
-
-			ul.icons li {
+/*			ul.icons li {
 				display: inline-block;
-				padding: 0em 0.6em 0em 0;
+				padding: 0em 1em 0em 0;
 			}
 
 				ul.icons li:last-child {
-					padding-right: 2em;
+					padding-right: 0;
 				}
 
 				ul.icons li > a, ul.icons li > span {
 					border: 0;
 					text-decoration: none;
 				}
+
+			    ul.icons li .icon {
+				color: inherit;
+			    }
 
 					ul.icons li > a:before, ul.icons li > span:before {
 						-moz-osx-font-smoothing: grayscale;
@@ -2305,7 +2300,7 @@ input, select, textarea {
 
 					ul.icons li > a .label, ul.icons li > span .label {
 						display: none;
-					}
+					}*/
 
 /* Contact */
 
