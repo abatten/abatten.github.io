@@ -2262,11 +2262,22 @@ input, select, textarea {
 				}*/
 
 		ul.icons {
+
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 			font-size: 2.5em;
 			width: 5px;
+		}
+
+		ul.icons li:hover{
+			color:#000000;
+
+		}
+
+		ul.icons li:before{
+			color:#000000;
+
 		}
 
 			ul.icons li {
@@ -3602,7 +3613,7 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
-		#menu .icons {
+/*		#menu .icons {
 			text-align: center;
 			text-justify: inter-word;
-		}
+		}*/
