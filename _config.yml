@@ -1,0 +1,51 @@
+# Setup
+title: Adam Batten
+tagline: Astrophysics PhD Student
+url: https://abatten.github.com
+paginate: 1
+baseurl: ""
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Adam Batten
+  url: https://abatten.github.io
+  email: abatten@swin.edu.au
+
+# Custom vars
+version: 3.0.0
+
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  coderay_default_lang: python
+  coderay_css: assets/css/pygments/monokai.css 
