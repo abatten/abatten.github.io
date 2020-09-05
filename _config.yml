@@ -1,7 +1,7 @@
 # Setup
 title: Adam Batten
 tagline: Astrophysics PhD Student
-url: https://abatten.github.com
+url: https://adambatten.com
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -34,7 +34,7 @@ sass:
 # Specify the author for blog posts
 author:
   name: Adam Batten
-  url: https://abatten.github.io
+  url: https://adambatten.com
   email: abatten@swin.edu.au
 
 # Custom vars
