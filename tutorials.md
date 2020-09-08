@@ -5,10 +5,10 @@ title: Tutorials
 
 {% assign tutorials = site['tutorials'] | sort: "date" %}
 
-<div class="row row-cols-3 row-cols-md-4">
+<div class="d-flex flex-row">
     {% for tutorial in tutorials %}
-      <div class="col sm-6 mb-4">
-        <div class="card h-100 box-shadow-hover pointer">
+      <div>
+        <div class="card box-shadow-hover pointer" style="max-width: 300px;">
           <img src="{{ tutorial.thumbnail }}" class="card-img-" alt="...">
           <div class="card-body">
             <h4 class="card-title"> {{ tutorial.title }}</h4>
