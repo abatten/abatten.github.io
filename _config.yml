@@ -1,6 +1,6 @@
 # Setup
 title: Adam Batten
-tagline: Astrophysics PhD Student
+tagline: Astrophysicist | Science Communicator
 url: https://adambatten.com
 paginate: 1
 baseurl: ""
@@ -14,8 +14,9 @@ plugins:
 
 
 collections:
-  'tutorials':
+  tutorials:
     output: true
+  authors:
 
 # Optimize Jekyll
 exclude:
