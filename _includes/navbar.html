@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Adam Batten</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+  	{% for item in site.data.navigation %}
+	<li class="nav-item {% if item.link==page.url %} active{% endif %}">
+
+        <a class="nav-link" href="{{item.link}}">{{item.name}}<span class="sr-only">(current)</span></a>
+ 	</li>
+  	{% endfor %}
+
+
+    </ul>
+    <span class="navbar-text">
+      Astrophysicist and Science Communicator
+    </span>
+  </div>
+</nav>
