@@ -14,7 +14,7 @@ title: Tutorials
             <h4 class="card-title"> {{ tutorial.title }}</h4>
             <p class="card-subtitle small text-muted mb-2"> {{ tutorial.subtitle}}</p>
 	    <p class="card-text"><small class="text-muted"> Last Updated: {{ tutorial.lastupdated | date: "%-d %B %Y" }}</small></p>
-            <a href="{{ tutorial.url }}" class="stretched-link"></a>
+            <a href="{{ tutorial.permalink }}" class="stretched-link"></a>
           </div>
         </div>
       </div>
