@@ -3,12 +3,14 @@ layout: tutorial
 title: "Submitting a Job on a Supercomputer"
 date: 2020-09-08
 author: Adam Batten
-subtitle: A beginners guide to writing and submitting Slurm jobs.
+subtitle: A beginners guide to writing and submitting Slurm jobs on OzSTAR.
 thumbnail: "/assets/images/slurm.png"
+lastupdated: 2020-09-09
+permalink: "/tutorials/submitting_jobs_on_ozstar"
 ---
-Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at Swinburne have found it difficult to determine exactly what to do when they want to submit a job to OzSTAR. This tutorial attempts give detailed instructions so that someone that is a complete beginner will understand how to submit their own jobs.
+Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it difficult to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end of this tutorial even complete OzSTAR beginners should understand how to write and submit their own jobs.
 
-This tutorial for submitting jobs is primarily aimed at people who will be using the [OzSTAR supercomputer](https://supercomputing.swin.edu.au/ozstar/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/). So keep in mind that some of this tutorial may not be applicable to all systems that are using a [Slurm](https://slurm.schedmd.com/overview.html) based job scheduler. This tutorial is based on the OzSTAR/Slurm documentation found [here](https://supercomputing.swin.edu.au/docs/2-ozstar/oz-slurm-create.html).
+This tutorial for submitting jobs is primarily aimed at people who will be using the [OzSTAR supercomputer](https://supercomputing.swin.edu.au/ozstar/) located at Swinburne. So keep in mind that some of this tutorial may not be applicable to all systems that are using a [Slurm](https://slurm.schedmd.com/overview.html) based job scheduler. This tutorial is based on the OzSTAR/Slurm documentation found [here](https://supercomputing.swin.edu.au/docs/2-ozstar/oz-slurm-create.html).
 
 ### This Tutorial Covers:
 - [Writing a job submission script](#writing-a-job-submission-script).
@@ -26,7 +28,7 @@ This tutorial for submitting jobs is primarily aimed at people who will be using
 - Write a shell script
 
 ### Some Key Definitions:
-- Slurm: A job scheduler. When you submit a job you are submitting it to Slurm. This program works to organise and schedule when all of the jobs will run after they have been submitted. Slurm determines the optimal way to allocate CPUs, time and memory to jobs based on what has been requested. 
+- [Slurm](https://slurm.schedmd.com/documentation.html): A job scheduler. When you submit a job, you are submitting it to Slurm. Slurm works to organise and schedule when all of the jobs will run after they have been submitted. Slurm determines the optimal way to allocate CPUs, time and memory to jobs based on what has been requested. 
 
 ## Writing and Submitting A Job
 Submitting a job on OzSTAR is a two step process:
@@ -87,7 +89,7 @@ In this example script we are requesting: 1 CPU (`#SBATCH --ntasks=1`), 100 MB o
 
 There are lots of additional options that you include here, for instance you can include the option to have SLURM send you an email when your job starts and ends.
 
-Example:
+<b>Example:</b>
 ```shell
 #SBATCH --mail-user=name@swin.edu.au
 #SBATCH --mail-type=ALL
@@ -97,8 +99,8 @@ You can see a complete list of parameters using `man sbatch`. I have also listed
 <div class="card bg-info mb-3">
   <div class="card-header text-white">Note</div>
   <div class="card-body bg-light">
-    <p class="card-text">A good rule of thumb is: The more resources you request, the longer it will take for your job to start. 
-    So asking for way more time and RAM than you actually need is not a good idea. 
+    <p class="card-text">A good rule of thumb is: The more resources you request, the longer it will take for your job to start.</p>
+    <p class="card-text"> This means that asking for way more time and RAM than you actually need is not a good idea. 
     Unfortunately, this tutorial can not tell you how much resources your job will require. 
     You will have have to determine that for yourself. 
     If you are using python, you can look into using packages such as <a href="https://github.com/pythonprofilers/memory_profiler">memory_profiler</a> and <a href="https://github.com/pyutils/line_profiler">line_profiler</a> to help estimate the memory usage and timing of a script.</p>
@@ -119,7 +121,7 @@ The third component is where you load all the modules that are necessary to run 
 - `module load anaconda3/5.0.1` loads Anaconda. I recommend using the `anaconda3/5.0.1` version of instead of `anaconda3/5.1.0` because there is a significant bug in the later version on OzSTAR related to Conda environments. 
 - `source activate py3` loads a Conda environment that I have called `py3`. In this environment I have installed all of the necessary packages required to execute `example_python_job.py`.
 
-Here is a list of a few common modules that you might need to load: `gcc/7.3.0`, `hdf5/1.10.1`, `openmpi/3.0.0`, 
+Here is a list of a few common modules that you might need to load: `gcc/7.3.0`, `hdf5/1.10.1`, `openmpi/3.0.0`. 
 
 <div class="card bg-warning mb-3">
   <div class="card-header text-white">Tip</div>
@@ -127,7 +129,7 @@ Here is a list of a few common modules that you might need to load: `gcc/7.3.0`,
    <p class="card-text"> 
         Loading modules is not necessary if they are already loaded in your session. 
         You can load modules in the <code>.bashrc</code> file in your home directory the same way you would load them in a bash script.
-        If you load modules in your <code>.bashrc</code> those modules will automatically get loaded into your environment every time you log into Ozstar. This means you only have to write <code>load module anaconda3/5.0.1</code> once in your <code>.bashrc</code> and forget about it.
+        If you load modules in your <code>.bashrc</code> those modules will automatically get loaded into your environment every time you log into Ozstar. This means you only have to write <code>load module anaconda3/5.0.1</code> once in your <code>.bashrc</code> and then forget about it.
     </p>
   </div>
 </div>
@@ -142,7 +144,7 @@ python example_python_job.py
 This final component is where you say what you want to actually run on the requested resources.
 In the example, we have a single line `python example_python_job.py` indicating that our job will run the `example_python_job.py` script. This the job step. It is also possible to list multiple steps in a submission script and they will be performed one after another. 
 
-Example:
+<b>Example:</b>
 ```shell
 python example_python_job.py
 python example_python_job2.py
@@ -177,13 +179,13 @@ You can find out about the state of your job and all other jobs in the queue usi
 This will give you the status of all your running and submitted jobs.
 You can also neglect the `--user=yourusername` to view the entire job queue for all users.
 
-If you are using OzSTAR the output of `squeue --user=yourusername` should look like the figure below. 
+If you are using OzSTAR then the output of `squeue --user=yourusername` should look similar to the figure below. 
 
 !["An image of the output of squeue after using sbatch on my_slurm_job.sh"](/assets/images/slurm_squeue.png)
 
 The columns of the output are as follows:
 
-- `JOBID`: The JOBID that is given to the job. This is unique amongst all jobs current and past.
+- `JOBID`: The JOBID that is given to the job. ThisID is unique amongst all jobs past, present and future.
 - `PARTITION`: The type of 'queue' that the job is in. This is usually given by the name of the type of CPU the job is waiting to start on.
 - `NAME`: The name of the job.
 - `USER`: The username of the person that submitted the job.
@@ -191,10 +193,10 @@ The columns of the output are as follows:
 	- `R`: Currently Running
 	- `PD`: Waiting for Resources (Pending)
 - `TIME`: The length of time the job has been running. If the job hasn't started it will say `0:00`. 
-- `NODES`: The number of 'nodes' that the job has requested. A 'node' is a collection of many CPUs, and OzSTAR has a few different types of node with different abouts of CPUs on each. For example the `john` (`PARTITION = skylake`) nodes have 32 CPUs each. 
-- `NODELIST(REASON)`: If the job is running (`ST = R`) this is the list of nodes that the job is using. If the job is pending (`ST = PD`) this is why the job is pending.
+- `NODES`: The number of 'nodes' that the job has requested. A 'node' is a collection of many CPUs. OzSTAR has a few different types of node with different abouts of CPUs on each. For example the `john` (`PARTITION = skylake`) nodes have 32 CPUs each. 
+- `NODELIST(REASON)`: If the job is currently running (`ST = R`) this is the list of nodes that the job is using. If the job is pending (`ST = PD`) this is why the job is pending.
 
-You can also use the [OzSTAR Job Monitor Website](https://supercomputing.swin.edu.au/monitor/) for a graphical view of all the job that are running and in the queue.
+You can also use the [OzSTAR Job Monitor Website](https://supercomputing.swin.edu.au/monitor/) for a graphical view of all the jobs that are running and in the queue.
 
 ## Canceling a Job
 Sometimes you will have a job that you need to cancel for some reason. You can cancel a running or submitted job at any time with `scancel jobid`.
@@ -203,7 +205,7 @@ Sometimes you will have a job that you need to cancel for some reason. You can c
 >>> scancel 99999999
 ```
 
-You can also cancel all of your jobs with `scancel -u username` or you can only cancel your "Pending" jobs with `scancel -t PD`.
+You can also cancel all of your jobs with `scancel --user=yourusername` or you can only cancel your "Pending" jobs with `scancel -t PD`.
 
 
 ## Examples
@@ -257,11 +259,16 @@ This is the name that will show up as `NAME` when using `squeue`.
 - `--account` is setting which group account this job belongs is associated with.
 
 ### Summary
-This tutorial is not meant as comprehensive article covering all there is to know about using Slurm; but hopefully by now you feel confident enough to be able to write you own bash scripts and get jobs running on OzSTAR.
+This tutorial is not meant as a comprehensive article covering all there is to know about using Slurm. Still hopefully, by now you feel confident enough to be able to write you own bash scripts and get jobs running on OzSTAR.
+
 
 ### Acknowledgements
 Thank you to [Ellert van der Velden (@1313e)](https://github.com/1313e/) for useful feedback on the draft of this article.
 
 
 
+
+
 {% include author_card.html author="Adam" %}
+
+

@@ -1,7 +1,7 @@
 ---
 keyname: Adam
 name: "Adam Batten"
-title: "Astrophysicist | Science Communicator"
+title: "Astrophysics PhD Candidate"
 image: "/assets/images/avatar.jpg"
 homepage: "https://adambatten.com"
 github: "https://github.com/abatten"

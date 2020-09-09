@@ -1,5 +1,6 @@
 <!-- <nav class="sidebar-nav">
   {% for item in site.data.navigation %}
+<div class="card mb-3 border-light">
  
   <a href="{{item.link}}" class="sidebar-nav-item{% if item.link==page.url %} active{% endif %}"> {{item.name}}</a> 
   {% endfor %}
@@ -7,39 +8,33 @@
 -->
 {% assign author = site.authors | where: {{ include.author }}, "keyname" | first %}
 
-<div class="container-fluid">
-<div class="card mb-3 border-light">
+<div class="card d-inline-flex flex-row border-light">
   <div class="row no-gutters">
-    <div class="col-md-4 my-4">
+    <div class="d-inline-flex">
     <center>
       <img src="{{ author.image }}" class="card-img roundsmall" alt="...">
      </center>
     </div>
-    <div class="col-md-8 my-4">
+    <div class=" d-flex flex-row">
       <div class="card-body">
-        <p> <a href="{{ author.homepage }}"> <h3 class="card-title">{{ author.name }}</h3> </a> {{ author.title }}</p>
-        <p class="card-text">
+	 <p><a href="{{ author.homepage }}"><h3 class="card-title">{{ author.name }}</h3></a></p> 
+	 <p> <small>{{ author.title }}</small> </p>
+        <p class="card-text flex-col">
 	{% if author.github %}
-	{% assign github = author.github %}
         {% include buttons.html button_name="Github" button_class="dark" url=author.github %}
 	{% endif %}
 
 	{% if author.twitter %}
-	{% assign twitter = author.twitter %}
         {% include buttons.html button_name="Twitter" button_class="info" url=author.twitter %}
 	{% endif %}
 	
 	{% if author.linkedin %}
-	{% assign linkedin = author.linkedin %}
         {% include buttons.html button_name="LinkedIn" button_class="primary" url=author.linkedin %}
 	{% endif %}
 	
 	{% if author.orcid %}
-	{% assign orcid = author.orcid %}
         {% include buttons.html button_name="ORCID" button_class="success" url=author.orcid %}
 	{% endif %}
        </p>
-
+	</div>
       </div>
-   </div>
-</div>
