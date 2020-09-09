@@ -257,7 +257,7 @@ This is the name that will show up as `NAME` when using `squeue`.
 - `--account` is setting which group account this job belongs is associated with.
 
 ### Summary
-This tutorial is not meant as a comprehensive article covering all there is to know about using Slurm. Still hopefully, by now you feel confident enough to be able to write you own bash scripts and get jobs running on OzSTAR.
+This tutorial is not meant as a comprehensive article covering all there is to know about using Slurm. Still, hopefully by now you feel confident enough to be able to write you own bash scripts and get jobs running on OzSTAR.
 
 
 ### Acknowledgements
