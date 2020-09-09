@@ -16,7 +16,7 @@ This tutorial for submitting jobs is primarily aimed at people who will be using
 	- [The Shebang](#1-the-shebang).
 	- [#SBATCH](#2-sbatch).
 	- [Loading Modules](#3-loading-modules).
-	- [Computing Step](#4-computing-step).
+	- [Job Step](#4-job-step).
 - [Submitting a job submission script](#submitting-a-job-submission-script).
 - [Querying the state of a job](#querying-the-state-of-a-job).
 - [Canceling a job](#canceling-a-job).
@@ -60,7 +60,7 @@ source activate py3
 python example_python_job.py
 ```
 
-There are four main components to a submission script: [The Shebang](#1-the-shebang), [#SBATCH](#2-sbatch), [Loading Modules](#3-loading-modules), 
+There are four main components to a submission script: [The Shebang](#1-the-shebang), [#SBATCH](#2-sbatch), [Loading Modules](#3-loading-modules) and [The Job Step](#4-job-step). 
 ### 1 The Shebang
 ```
 #!/bin/bash 
@@ -135,13 +135,12 @@ Here is a list of a few common modules that you might need to load: `gcc/7.3.0`,
 
 {% include note_card.html type="warning" title="Tip" text="If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run." %} 
 
-### 4 Computing Step  
+### 4 Job Step  
 
 ```shell
 python example_python_job.py
 ```
-This final component is where you say what you want to actually run on the requested resources.
-In the example, we have a single line `python example_python_job.py` indicating that our job will run the `example_python_job.py` script. This the job step. It is also possible to list multiple steps in a submission script and they will be performed one after another. 
+This final component is where you say what you want to actually run on the requested resources. This is the job step. In the example, we have a single line `python example_python_job.py` indicating that our job will run the `example_python_job.py` script. It is also possible to list multiplejob steps in a submission script and they will be performed one after another. 
 
 <b>Example:</b>
 ```shell
