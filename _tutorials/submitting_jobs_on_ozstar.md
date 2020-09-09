@@ -6,7 +6,6 @@ author: Adam Batten
 subtitle: A beginners guide to writing and submitting Slurm jobs on OzSTAR.
 thumbnail: "/assets/images/slurm.png"
 lastupdated: 2020-09-09
-permalink: "/tutorials/submitting_jobs_on_ozstar"
 ---
 Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it difficult to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end of this tutorial even complete OzSTAR beginners should understand how to write and submit their own jobs.
 
