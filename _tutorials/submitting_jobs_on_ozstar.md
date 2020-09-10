@@ -4,10 +4,10 @@ title: "Submitting a Job on a Supercomputer"
 date: 2020-09-08
 author: Adam Batten
 subtitle: A beginners guide to writing and submitting Slurm jobs on OzSTAR.
-thumbnail: "/assets/images/slurm.png"
-lastupdated: 2020-09-09
+thumbnail: "/assets/images/OzStar_logo.png"
+lastupdated: 2020-09-10
 ---
-Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it difficult to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end of this tutorial even complete OzSTAR beginners should understand how to write and submit their own jobs.
+Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it challenging to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end, even complete OzSTAR beginners should understand how to write and submit their own jobs.
 
 This tutorial for submitting jobs is primarily aimed at people who will be using the [OzSTAR supercomputer](https://supercomputing.swin.edu.au/ozstar/) located at Swinburne. So keep in mind that some of this tutorial may not be applicable to all systems that are using a [Slurm](https://slurm.schedmd.com/overview.html) based job scheduler. This tutorial is based on the OzSTAR/Slurm documentation found [here](https://supercomputing.swin.edu.au/docs/2-ozstar/oz-slurm-create.html).
 
@@ -32,7 +32,7 @@ This tutorial for submitting jobs is primarily aimed at people who will be using
 ## Writing and Submitting A Job
 Submitting a job on OzSTAR is a two step process:
 
-1) First you have to request resources from OzSTAR. This will normally include the amount of memory you need, the number of CPUs you want to use and how long you expect to be using the resources. This step is called a ''resource request". An example resource request using English could be: 
+1) First you have to request resources from OzSTAR. This will normally include the amount of memory you need, the number of CPUs you want to use and how long you expect to be using the resources. This step is called a ''resource request". An example resource request using english could be: 
 *<center>"I want to use 200 MB of memory on 1 CPU core for 2 hours".</center>*
 
 2) The second step is where you say what you want these resources to be doing. This includes specifying what software is needed, which scripts you want to run, and how to execute them. This step is called the 'job step'. An example job step could be: 
@@ -45,7 +45,7 @@ Luckily, you can do both of these steps at the same time using a "submission scr
 A submission script is just a shell script that is formatted in a specific way such that it contains both your resource request and your job step. 
 Here is an example of a simple submission script called `my_slurm_job.sh`. This submission script will run a python script called `example_python_job.py`.
 
-```shell
+```
 #!/bin/bash
 
 #SBATCH --ntasks=1
@@ -68,28 +68,36 @@ There are four main components to a submission script: [The Shebang](#1-the-sheb
 
 The first component is the very first line: `#!/bin/bash`. This line has many names including: 'shebang', 'shabang', 'hashbang', 'pound-bang', 'hash-pling' and probably lots of other ridiculous sounding names. This line serves the purpose of defining which 'interpreter' to use when executing the script. 
 
-In this case we are effectively saying:  "This is a Bash (Bourne-Again Shell) script, so execute this script with a Bash shell". 
+In this case we are effectively saying:  "This is a bash (Bourne-Again Shell) script, so execute this script with a bash shell". 
     
-Since all of your submission scripts will be likely be a Bash script, this line will be the same for every submission script you write. 
+Since all of your submission scripts will be likely be a bash script, this line will be the same for every submission script you write. 
 
     
 ### 2 #SBATCH
-```shell
+```
 #SBATCH --ntasks=1
 #SBATCH --mem=100MB
 #SBATCH --time=00:30:00
 ```
 
-The second component is where you request resources and it includes is all the lines that start with `#SBATCH`. Any line in your submission script that begins with `#SBATCH` is understood by Slurm to be a resource request or an additional option related to the job.
+The second component is where you request resources and it includes all the lines that start with `#SBATCH`. Any line in your submission script that begins with `#SBATCH` is understood by Slurm to be a resource request or an additional option related to the job.
 
 {% include note_card.html type="info" title="Note" text="Notice the # in front. This can be easy to forget but is important." %}
 
-In this example script we are requesting: 1 CPU (`#SBATCH --ntasks=1`), 100 MB of RAM (`#SBATCH --mem=100MB`) for 30 minutes (`#SBATCH --time=00:30:00`).
+In this example script we are requesting: 1 CPU (`#SBATCH --ntasks=1`) and 100 MB of RAM (`#SBATCH --mem=100MB`) for 30 minutes (`#SBATCH --time=00:30:00`).
+Similarly if you wanted request 2 GB of RAM on a single CPU for 12 hours your resource request would look like this:
+
+<b>Example</b>
+```
+#SBATCH --ntasks=1
+#SBATCH --mem=2GB
+#SBATCH --time=12:00:00
+```
 
 There are lots of additional options that you include here, for instance you can include the option to have SLURM send you an email when your job starts and ends.
 
 <b>Example:</b>
-```shell
+```
 #SBATCH --mail-user=name@swin.edu.au
 #SBATCH --mail-type=ALL
 ```
@@ -107,7 +115,7 @@ You can see a complete list of parameters using `man sbatch`. I have also listed
 </div>
 
 ### 3 Loading Modules
-```shell
+```
 module purge
 module load anaconda3/5.0.1
 
@@ -136,11 +144,10 @@ Here is a list of a few common modules that you might need to load: `gcc/7.3.0`,
 {% include note_card.html type="warning" title="Tip" text="If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run." %} 
 
 ### 4 Job Step  
-
-```shell
+```
 python example_python_job.py
 ```
-This final component is where you say what you want to actually run on the requested resources. This is the job step. In the example, we have a single line `python example_python_job.py` indicating that our job will run the `example_python_job.py` script. It is also possible to list multiplejob steps in a submission script and they will be performed one after another. 
+This final component is where you say what you want to actually run on the requested resources. This is the job step. In the example, we have a single line `python example_python_job.py` indicating that our job will run the `example_python_job.py` script. It is also possible to list multiple job steps in a submission script and they will be performed one after another. 
 
 <b>Example:</b>
 ```shell
@@ -155,7 +162,7 @@ In this case, after the first job step is completed the second job step (`exampl
 
 After you have finished writing a submission script, you can submit it to Slurm with the `sbatch` command.
 
-```shell
+```
 >>> sbatch my_slurm_job.sh
 sbatch: Submitted batch job 99999999
 ```
@@ -183,15 +190,15 @@ If you are using OzSTAR then the output of `squeue --user=yourusername` should l
 
 The columns of the output are as follows:
 
-- `JOBID`: The JOBID that is given to the job. ThisID is unique amongst all jobs past, present and future.
-- `PARTITION`: The type of 'queue' that the job is in. This is usually given by the name of the type of CPU the job is waiting to start on.
+- `JOBID`: The JOBID that is given to the job. This ID is unique amongst all jobs past, present and future.
+- `PARTITION`: The type of 'queue' that the job is in. This is usually given by the name of the type of CPU that will be running the job.
 - `NAME`: The name of the job.
 - `USER`: The username of the person that submitted the job.
 - `ST`: The status of the job.
 	- `R`: Currently Running
 	- `PD`: Waiting for Resources (Pending)
-- `TIME`: The length of time the job has been running. If the job hasn't started it will say `0:00`. 
-- `NODES`: The number of 'nodes' that the job has requested. A 'node' is a collection of many CPUs. OzSTAR has a few different types of node with different abouts of CPUs on each. For example the `john` (`PARTITION = skylake`) nodes have 32 CPUs each. 
+- `TIME`: The length of time the job has been running. If the job is pending (`ST = PD`) it will say `0:00`. 
+- `NODES`: The number of 'nodes' that the job has requested. A 'node' is a collection of many CPUs. OzSTAR has a few different types of nodes with different amounts of CPUs on each. For example the `john` (`PARTITION = skylake`) nodes have 32 CPUs each. 
 - `NODELIST(REASON)`: If the job is currently running (`ST = R`) this is the list of nodes that the job is using. If the job is pending (`ST = PD`) this is why the job is pending.
 
 You can also use the [OzSTAR Job Monitor Website](https://supercomputing.swin.edu.au/monitor/) for a graphical view of all the jobs that are running and in the queue.
@@ -199,7 +206,7 @@ You can also use the [OzSTAR Job Monitor Website](https://supercomputing.swin.ed
 ## Canceling a Job
 Sometimes you will have a job that you need to cancel for some reason. You can cancel a running or submitted job at any time with `scancel jobid`.
 
-```shell
+```
 >>> scancel 99999999
 ```
 
@@ -209,7 +216,7 @@ You can also cancel all of your jobs with `scancel --user=yourusername` or you c
 ## Examples
 
 #### Example 0
-```shell
+```
 #!/bin/bash
 
 #SBATCH --ntasks=1
@@ -227,7 +234,7 @@ This is the same example as shown throughout this tutorial.
 
 
 #### Example 1
-```shell
+```
 #!/bin/bash
 
 #SBATCH --ntasks=1

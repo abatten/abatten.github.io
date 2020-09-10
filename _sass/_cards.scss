@@ -1,14 +1,30 @@
-.box-shadow-hover {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-.box-shadow-hover:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.pointer {
-  cursor: pointer;
-}
-
 .lighter {
   opacity: .4;
+}
+
+
+.card-img-tutorial {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.tutorial-card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+
+
+}
+
+
+.tutorial-card:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+@media (min-width: 40em) {
+.tutorial-card {
+  max-width: 300px;
+
+}
 }
