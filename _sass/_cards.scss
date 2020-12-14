@@ -3,6 +3,19 @@
 }
 
 
+// Make the entire card clickable to follow link
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+
 .card-img-tutorial {
     width: 100%;
     object-fit: cover;
@@ -12,19 +25,16 @@
 .tutorial-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
-
-
 }
 
-
+// Highlight the card on hover
 .tutorial-card:hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.16), 0 5px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-@media (min-width: 40em) {
+@media (min-width: 768px) {
 .tutorial-card {
   max-width: 300px;
+  }
+}
 
-}
-}

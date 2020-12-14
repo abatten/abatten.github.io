@@ -16,7 +16,10 @@ plugins:
 collections:
   tutorials:
     output: true
+  outreach:
+    output: true
   authors:
+  
 
 # Optimize Jekyll
 exclude:
