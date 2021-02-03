@@ -1,3 +1,1 @@
----
----
-{%- include search-providers/default/search-data.js -%}
+window.TEXT_SEARCH_DATA={'outreach':[{'title':"Pint of Science Panel: What's the Matter?",'url':"/outreach/pint_of_science_2020.html"}],'posts':[{'title':"Radio Interview: Dragonfly Drone",'url':"/2019/06/28/radio_interview_titan.html"},{'title':"Pint Of Science 2020",'url':"/2021/01/27/pint-of-science-2020.html"},{'title':"Submitting a Job on a Supercomputer",'url':"/2021/01/27/submitting_jobs_on_ozstar.html"},{'title':"Setting up Python on OzSTAR",'url':"/2021/02/03/setting_up_python_on_ozstar.html"}],'tutorials':[{'title':"Submitting a Job on a Supercomputer",'url':"/tutorials/submitting_jobs_on_ozstar.html"},{'title':"Setting up Python on OzSTAR",'url':"/tutorials/setting_up_python_on_ozstar.html"}]};
