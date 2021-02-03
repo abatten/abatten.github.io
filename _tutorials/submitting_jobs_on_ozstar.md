@@ -1,12 +1,21 @@
 ---
-layout: tutorial
-title: "Submitting a Job on a Supercomputer"
-date: 2020-09-08
+layout: article
+title: Submitting a Job on a Supercomputer
 author: Adam Batten
-subtitle: A beginners guide to writing and submitting Slurm jobs on OzSTAR.
-thumbnail: "/assets/images/OzStar_logo.png"
-lastupdated: 2020-09-10
+show_author_profile: true
+sharing: true
+aside:
+  toc: true
+cover: /assets/images/OzStar_logo.png
+date: 2020-09-08
+modify_date: 2021-01-26
+tags: tutorial supercomputing slurm ozstar
+
 ---
+## A beginners guide to writing and submitting Slurm jobs on OzSTAR.
+
+
+
 Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it challenging to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end, even complete OzSTAR beginners should understand how to write and submit their own jobs.
 
 This tutorial for submitting jobs is primarily aimed at people who will be using the [OzSTAR supercomputer](https://supercomputing.swin.edu.au/ozstar/) located at Swinburne. So keep in mind that some of this tutorial may not be applicable to all systems that are using a [Slurm](https://slurm.schedmd.com/overview.html) based job scheduler. This tutorial is based on the OzSTAR/Slurm documentation found [here](https://supercomputing.swin.edu.au/docs/2-ozstar/oz-slurm-create.html).
@@ -82,7 +91,8 @@ Since all of your submission scripts will be likely be a bash script, this line 
 
 The second component is where you request resources and it includes all the lines that start with `#SBATCH`. Any line in your submission script that begins with `#SBATCH` is understood by Slurm to be a resource request or an additional option related to the job.
 
-{% include note_card.html type="info" title="Note" text="Notice the # in front. This can be easy to forget but is important." %}
+Notice the # in front. This can be easy to forget but is important.
+{:.warning}
 
 In this example script we are requesting: 1 CPU (`#SBATCH --ntasks=1`) and 100 MB of RAM (`#SBATCH --mem=100MB`) for 30 minutes (`#SBATCH --time=00:30:00`).
 Similarly if you wanted request 2 GB of RAM on a single CPU for 12 hours your resource request would look like this:
@@ -103,16 +113,12 @@ There are lots of additional options that you include here, for instance you can
 ```
 You can see a complete list of parameters using `man sbatch`. I have also listed more examples of options that may be useful at the end of this tutorial.
 
-<div class="card bg-info mb-3">
-  <div class="card-header text-white">Note</div>
-  <div class="card-body bg-light">
-    <p class="card-text">A good rule of thumb is: The more resources you request, the longer it will take for your job to start.</p>
-    <p class="card-text"> This means that asking for way more time and RAM than you actually need is not a good idea. 
-    Unfortunately, this tutorial can not tell you how much resources your job will require. 
-    You will have have to determine that for yourself. 
-    If you are using python, you can look into using packages such as <a href="https://github.com/pythonprofilers/memory_profiler">memory_profiler</a> and <a href="https://github.com/pyutils/line_profiler">line_profiler</a> to help estimate the memory usage and timing of a script.</p>
-  </div>
-</div>
+A good rule of thumb is: The more resources you request, the longer it will take for your job to start. 
+This means that asking for way more time and RAM than you actually need is not a good idea. 
+Unfortunately, this tutorial can not tell you how much resources your job will require. 
+You will have have to determine that for yourself. 
+If you are using python, you can look into using packages such as <a href="https://github.com/pythonprofilers/memory_profiler">memory_profiler</a> and <a href="https://github.com/pyutils/line_profiler">line_profiler</a> to help estimate the memory usage and timing of a script.
+{:.info}
 
 ### 3 Loading Modules
 ```
@@ -130,18 +136,13 @@ The third component is where you load all the modules that are necessary to run 
 
 Here is a list of a few common modules that you might need to load: `gcc/7.3.0`, `hdf5/1.10.1`, `openmpi/3.0.0`. 
 
-<div class="card bg-warning mb-3">
-  <div class="card-header text-white">Tip</div>
-  <div class="card-body bg-light">
-   <p class="card-text"> 
-        Loading modules is not necessary if they are already loaded in your session. 
-        You can load modules in the <code>.bashrc</code> file in your home directory the same way you would load them in a bash script.
-        If you load modules in your <code>.bashrc</code> those modules will automatically get loaded into your environment every time you log into Ozstar. This means you only have to write <code>load module anaconda3/5.0.1</code> once in your <code>.bashrc</code> and then forget about it.
-    </p>
-  </div>
-</div>
+Loading modules is not necessary if they are already loaded in your session. 
+You can load modules in the <code>.bashrc</code> file in your home directory the same way you would load them in a bash script.
+If you load modules in your <code>.bashrc</code> those modules will automatically get loaded into your environment every time you log into Ozstar. This means you only have to write <code>load module anaconda3/5.0.1</code> once in your <code>.bashrc</code> and then forget about it.
+{:.info}
 
-{% include note_card.html type="warning" title="Tip" text="If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run." %} 
+If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run.
+{:.info}
 
 ### 4 Job Step  
 ```
@@ -170,7 +171,8 @@ sbatch: Submitted batch job 99999999
 If the job is successfully submitted, it will respond with the `jobid` that was assigned to the job. In this example the `jobid` is 99999999.
 
 
-{% include note_card.html type="info" title="Note" text="You can also submit a job to the queue from within a submission script. This can be useful for automating a pipeline of scripts that need to be completed in a sequence." %}
+You can also submit a job to the queue from within a submission script. This can be useful for automating a pipeline of scripts that need to be completed in a sequence.
+{:.info}
 
 You can find more documentaion related to the `sbatch` command on the official Slurm website [here](https://slurm.schedmd.com/sbatch.html).
 
@@ -269,11 +271,4 @@ This tutorial is not meant as a comprehensive article covering all there is to k
 
 ### Acknowledgements
 Thank you to [Ellert van der Velden (@1313e)](https://github.com/1313e/) for useful feedback on the draft of this article.
-
-
-
-
-
-{% include author_card.html author="Adam" %}
-
 

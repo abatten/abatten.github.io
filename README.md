@@ -1,1 +1,1 @@
-[https://adambatten.com](https://adambatten.com)
+[adambatten.com](https://adambatten.com)
