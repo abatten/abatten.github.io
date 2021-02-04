@@ -8,14 +8,14 @@ aside:
   toc: true
 cover: /assets/images/OzStar_logo.png
 date: 2021-02-02
-modify_date: 2021-02-02
+modify_date: 2021-02-04
 tags: tutorial supercomputing python ozstar
 
 ---
 
 ## Getting Started with using Conda Environments on OzStar
 
-This is a short guide on how to set up Python on [OzSTAR](https://supercomputing.swin.edu.au/ozstar/), the supercomputer located at the [Swinburne University of Technology](https://www.swinburne.edu.au/). This will guide you through setting up [Conda enviroments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and some of the pitfalls you may encounter along the way. Keep in mind this isn't necessarly the 'perfect' way to use python on OzSTAR (since it really depends on your use case), but this tutorial is a good recommendation to get started for most people.
+This is a short guide on how to set up Python on [OzSTAR](https://supercomputing.swin.edu.au/ozstar/), the supercomputer located at the [Swinburne University of Technology](https://www.swinburne.edu.au/). This will guide you through setting up [Conda enviroments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) and some of the pitfalls you may encounter along the way. Keep in mind this isn't necessarily the 'perfect' way to use Python on OzSTAR (since it really depends on your use case), but this tutorial is a good recommendation to get started for most people.
 
 If you are unfamiliar with [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) before this guide, they may feel a little different, but will make using Python on OzSTAR significantly easier in the long run. 
 
@@ -38,15 +38,15 @@ Note: This is primarily aimed at people that will be using OzSTAR, and may not b
 - Can edit a text file (specifically your `.bashrc` or `.bash_profile`)
 
 ### Some Key Definitions:
-- [Anaconda](https://www.anaconda.com/): A distribution of python designed for scientific computing. By installing Python through Anaconda, it makes managing and installing Python packages/versions much easier. In particular, Anaconda has a useful feature called '`conda` environments' which allows us to use different versions of Python or Python packages when we need to.
+- [Anaconda](https://www.anaconda.com/): A distribution of Python designed for scientific computing. By installing Python through Anaconda, it makes managing and installing Python packages/versions much easier. In particular, Anaconda has a useful feature called '`conda` environments' which allows us to use different versions of Python or Python packages when we need to.
 - `conda`: A package and environment manger that is bundled with [Anaconda](https://www.anaconda.com/). It can install packages similar to how `pip` can install Python packages from [PyPI](https://pypi.org/) using `conda install`. It can also create environments using `conda create`.
 - `.bashrc`: This is a Bash shell script that runs whenever you launch an interactive shell. You can put any command(s) in a `.bashrc` that you would write at the command prompt. Then every time you launch a new interactive shell all the commands in the `.bashrc` will be executed. It is common practice to customise your `.bashrc` to include your own preferences (e.g. [aliases](https://en.wikipedia.org/wiki/Alias_(command)) for specific commands that you type often). You can find your `.bashrc` in your home directory (`~/.bashrc`).
-- `PATH`: `PATH` is an environment variable that specifies a colection of directories where programs are located. This is list of directories are locations where programs can be started without having to type the entire path (e.g. `/User/username/subfolder/otherfolder/program.exe`). For example: to run Python you would normally just use the prefix `python`, without specifying where Python is located. This is because `python` is already the system `PATH`. If there are multiple directories in `PATH` that the required program, the one that will be used is the one that was added to the `PATH` the latest.
+- `PATH`: `PATH` is an environment variable that specifies a collection of directories where programs are located. This list of directories are locations where programs can be started without having to type the entire path (e.g. `/User/username/subfolder/otherfolder/program.exe`). For example: to run Python you would normally just use the prefix `python`, without specifying where Python is located. This is because `python` is already the system `PATH`. If there are multiple directories in `PATH` that the required program can use, the one that will be used is the one that was added to the `PATH` the latest.
 
 ## Preparation
 
 To get started, make sure that there is absolutely nothing related to Python environments currently found anywhere in your home directory or module lists.
-This includes loading any of the OzSTAR Python modules (including Anaconda), like Python; [NumPy](https://numpy.org/); [Matplotlib](https://matplotlib.org/); etc, or having any conda installation (like [Anaconda](https://www.anaconda.com/) and [Miniconda](https://docs.conda.io/en/latest/miniconda.html)). 
+This includes loading any of the OzSTAR Python modules (including Anaconda), like Python; [NumPy](https://numpy.org/); [Matplotlib](https://matplotlib.org/); etc, or having any `conda` installation (like [Anaconda](https://www.anaconda.com/) and [Miniconda](https://docs.conda.io/en/latest/miniconda.html)). 
 Loading modules or libraries that are required by Python packages is fine.
 
 You can ensure that all modules have been unloaded from your session use `module perge`.
@@ -59,7 +59,7 @@ You can search for modules using `module spider <module_name>`. To view a list o
 For managing Python on OzSTAR I suggest using Anaconda3 and `conda` environments. 
 
 Despite its name, Anaconda3 is can be used for both Python 3 and Python 2 ([see warning about using Python 2](#python-3-vs-python-2)).
-However Anaconda3 has the tendancy to overwrite the `PATH` to certain libraries that are used for Python packages. Examples of this include the HDF5-library [h5py](https://h5py.org/) and the MPI-library [mpi4py](https://mpi4py.readthedocs.io/en/stable/). It is a good idea to use the system modules on OzSTAR (except for the system Python) as they are compiled and optimized for the OzStar architecture. Therefore if you have a list of system modules that need to be loaded, make sure to load `anaconda3` first so that the other modules will overide the `anaconda3` paths as they are loaded. Loading all modules after `anaconda3` means that those corresponding libraries are found earlier in the system `PATH` than `anaconda3`'s libraries. This ensures that everything is found in the correct place. To do this you can execute the following: 
+However Anaconda3 has the tendency to overwrite the `PATH` to certain libraries that are used for Python packages. Examples of this include the HDF5-library [h5py](https://h5py.org/) and the MPI-library [mpi4py](https://mpi4py.readthedocs.io/en/stable/). It is a good idea to use the system modules on OzSTAR (except for the system Python) as they are compiled and optimized for the OzStar architecture. Therefore if you have a list of system modules that need to be loaded, make sure to load `anaconda3` first so that the other modules will override the `anaconda3` paths as they are loaded. Loading all modules after `anaconda3` means that those corresponding libraries are found earlier in the system `PATH` than `anaconda3`'s libraries. This ensures that everything is found in the correct place. To do this you can execute the following: 
 
 ```
 module purge
@@ -74,7 +74,7 @@ The reason for using `anaconda3/5.0.1` rather than `anaconda3/5.1.0` (which is a
 
 <b>Example:</b>
 
-If everytime I want to log into OzSTAR I load the modules `anaconda3`, `openmpi`, `hdf5` and `git`, to avoid having to type these out every single time I put this code into my `.bashrc` file. Note that the `anaconda3/5.0.1` comes directly after `module purge`.
+If every time I want to log into OzSTAR I load the modules `anaconda3`, `openmpi`, `hdf5` and `git`, to avoid having to type these out every single time I put this code into my `.bashrc` file. Note that the `anaconda3/5.0.1` comes directly after `module purge`.
 ```
 module purge
 module load anaconda3/5.0.1
@@ -113,7 +113,7 @@ conda create -n <environment_name> python==<python_version>
 ```
 This will create an environment with the name `<environment_name>` using Python version `<python_version>`. This environment will be stored in your `~/.conda/envs` directory. You can create multiple environments for the different versions of Python required. I personally have a `Python 3.8` environment for 99.9% of my work and `Python 2.7` environment to run software that hasn't been update to `Python 3` yet.
 
-If you dont know what to name your environment, I would suggest naming your environment either after the Python version. i.e If you are going to be using `Python 3.8`, name the environment `py38`, or you are using `Python 2.7` name it `py27`.
+If you don't know what to name your environment, I would suggest naming your environment either after the Python version. i.e If you are going to be using `Python 3.8`, name the environment `py38`, or you are using `Python 2.7` name it `py27`.
 
 ### Activate a Conda Environment
 After the environment has been made, it can be activated with `source activate <environment_name>` (or `. activate <environment_name>`, either one is fine). You will be able to see that your environment is activated because the `<environment_name>` will appear on the left hand side of your prompt as shown below.
