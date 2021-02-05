@@ -8,7 +8,7 @@ aside:
   toc: true
 cover: /assets/images/OzStar_logo.png
 date: 2021-02-02
-modify_date: 2021-02-04
+modify_date: 2021-02-05
 tags: tutorial supercomputing python ozstar
 
 ---
@@ -56,9 +56,9 @@ You can search for modules using `module spider <module_name>`. To view a list o
 {:.info}
 
 ## Loading Anaconda
-For managing Python on OzSTAR I suggest using Anaconda3 and `conda` environments. 
+For managing Python on OzSTAR I suggest using `anaconda3` and `conda` environments. 
 
-Despite its name, Anaconda3 is can be used for both Python 3 and Python 2 ([see warning about using Python 2](#python-3-vs-python-2)).
+Despite its name, `anaconda3` is can be used for both Python 3 and Python 2 ([see warning about using Python 2](#python-3-vs-python-2)).
 However Anaconda3 has the tendency to overwrite the `PATH` to certain libraries that are used for Python packages. Examples of this include the HDF5-library [h5py](https://h5py.org/) and the MPI-library [mpi4py](https://mpi4py.readthedocs.io/en/stable/). It is a good idea to use the system modules on OzSTAR (except for the system Python) as they are compiled and optimized for the OzStar architecture. Therefore if you have a list of system modules that need to be loaded, make sure to load `anaconda3` first so that the other modules will override the `anaconda3` paths as they are loaded. Loading all modules after `anaconda3` means that those corresponding libraries are found earlier in the system `PATH` than `anaconda3`'s libraries. This ensures that everything is found in the correct place. To do this you can execute the following: 
 
 ```
@@ -95,9 +95,9 @@ Say for example that you are writing some code for one of your projects. This pr
 
 1. Uninstall and reinstall Python every single time you swap between the different software (__tedious and not fun__).
 3. Re-write the other software to be Python 3 compatible (__also not fun__).
-2. Re-write all your software to be compatible Python 2.7 compatible (__not fun and will be more limited in features and support__).
+2. Re-write all your software to be compatible`Python 2.7`compatible (__not fun and will be more limited in features and support__).
 4. Give up entirely (__really really not fun__).
-5. Use different `conda` environments to swap between Python 2.7 and Python 3 easily.
+5. Use different `conda` environments to swap between`Python 2.7`and Python 3 easily.
 
 
 ### Creating a Conda Environment
@@ -113,7 +113,7 @@ conda create -n <environment_name> python==<python_version>
 ```
 This will create an environment with the name `<environment_name>` using Python version `<python_version>`. This environment will be stored in your `~/.conda/envs` directory. You can create multiple environments for the different versions of Python required. I personally have a `Python 3.8` environment for 99.9% of my work and `Python 2.7` environment to run software that hasn't been update to `Python 3` yet.
 
-If you don't know what to name your environment, I would suggest naming your environment either after the Python version. i.e If you are going to be using `Python 3.8`, name the environment `py38`, or you are using `Python 2.7` name it `py27`.
+If you don't know what to name your environment, I would suggest naming your environment after the Python version. i.e If you are going to be using `Python 3.8`, name the environment `py38`, or you are using `Python 2.7` name it `py27`.
 
 ### Activate a Conda Environment
 After the environment has been made, it can be activated with `source activate <environment_name>` (or `. activate <environment_name>`, either one is fine). You will be able to see that your environment is activated because the `<environment_name>` will appear on the left hand side of your prompt as shown below.
@@ -164,7 +164,7 @@ Once started, there are no speed differences as all required scripts and modules
 So in effect, the first Python script you run in your session will take about a minute longer to run, but the rest will be exactly the same.
 
 ## Python 3 vs. Python 2
-It is advised that you should be using Python 3 for almost all of your projects. As of the 1st of January 2020, Python 2 is no longer supported. Meaning that packages like [NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org), [SciPy](https://scipy.org) and [Astropy](https://astropy.org) (plus more) will no longer update or fix issues with the Python 2 version of the software. If you absolutely need to use Python 2 for a specific project (e.g. legacy code that hasn't been ported into Python 3 yet), you can set up a Python 2.7 environment and a Python 3 environment. 
+It is advised that you should be using Python 3 for almost all of your projects. As of the 1st of January 2020, Python 2 is no longer supported. Meaning that packages like [NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org), [SciPy](https://scipy.org) and [Astropy](https://astropy.org) (plus more) will no longer update or fix issues with the Python 2 version of the software. If you absolutely need to use Python 2 for a specific project (e.g. legacy code that hasn't been ported into Python 3 yet), you can set up a`Python 2.7`environment to run that specific piece of software and a Python 3 environment for everything else. 
 {:.warning}
 
 ## Acknowledgements
