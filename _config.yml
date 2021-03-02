@@ -63,6 +63,8 @@ collections:
     output: true
   outreach:
     output: true
+  projects:
+    output: true
 
 
 ## => Paths
@@ -174,6 +176,9 @@ search:
 
 ## => Analytics
 ##############################
+
+google_analytics: UA-144100453-1
+
 analytics:
   provider: google # false (default), "google", "custom"
 
