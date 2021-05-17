@@ -8,13 +8,11 @@ aside:
   toc: true
 cover: /assets/images/OzStar_logo.png
 date: 2020-09-08
-modify_date: 2021-01-26
+modify_date: 2021-04-27
 tags: tutorial supercomputing slurm ozstar
 
 ---
 ## A beginners guide to writing and submitting Slurm jobs on OzSTAR.
-
-
 
 Many students in the [Centre of Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the [Swinburne University of Technology](https://www.swinburne.edu.au/) have found it challenging to determine exactly what they need to do when they want to turn a program they have written into a job to OzSTAR. This tutorial aims to resolve this issue by giving detailed instructions so by the end, even complete OzSTAR beginners should understand how to write and submit their own jobs.
 
@@ -141,7 +139,7 @@ You can load modules in the <code>.bashrc</code> file in your home directory the
 If you load modules in your <code>.bashrc</code> those modules will automatically get loaded into your environment every time you log into Ozstar. This means you only have to write <code>load module anaconda3/5.0.1</code> once in your <code>.bashrc</code> and then forget about it.
 {:.info}
 
-If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run.
+If you are using python I highly recommend that you use Conda environments when working on OzSTAR. Anaconda environments will save you lots of time, stress and effort in the long run. I have a tutorial for <a href="https://adambatten.com/tutorials/setting_up_python_on_ozstar.html">setting up python on OzSTAR</a> that details how to set up Conda environments.
 {:.info}
 
 ### 4 Job Step  
