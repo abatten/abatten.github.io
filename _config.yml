@@ -180,7 +180,7 @@ search:
 google_analytics: UA-144100453-1
 
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: "google" # false (default), "google", "custom"
 
   ## Google Analytics
   google:

@@ -30,10 +30,14 @@ header:
 #      fr-LU   : *FR
 #      # @end locale config
 #    url: /about.html
+  - titles:
+      en      : &EN Research
+    url: /research
 
   - titles:
       en      : &EN Tutorials
-    url: /tutorials.html
+    url: /tutorials
+
   - titles:
       en      : &EN Media & Outreach
-    url: /outreach.html
+    url: /outreach
