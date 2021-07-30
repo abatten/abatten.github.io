@@ -4,7 +4,7 @@ title: Scientific Talks
 ---
 
 <div style="width:30%; margin:0 auto;" align="center" markdown="1">
-![Adam presenting at the ASA in 2021](/assets/images/adam_asa_2021.jpeg){:.large.circle.border.shadow}
+![Adam presenting at the ASA in 2021](assets/images/adam_asa_2021.jpeg){:.large.circle.border.shadow}
 </div> 
 
 ### Recent Invited Talks and Colloquiums
