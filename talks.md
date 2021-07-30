@@ -10,6 +10,7 @@ title: Scientific Talks
 ### Recent Invited Talks and Colloquiums
 - 2021-07-30: Macquarie University, Sydney, Australia (**Invited Colloquium**)
     - *"The Intergalactic Medium through the lens of Fast Radio Bursts and Hydrodynamic Simulations"*
+    - [Slides](documents/talks/2021-07-30-Macquarie.pdf){:.button.button--success.button--rounded.button--xs}
 - 2021-06-30: <a href="https://astro.physics.unimelb.edu.au/2021/06/23/adam_batten-html/">University of Melbourne</a>, Melbourne, Australia (**Invited Colloquium**)
     - *"Probing the Intergalactic Medium with Fast Radio Bursts and Hydrodynamic Simulations"*
 - 2021-01-26: Kavli IPMU, Kashiwa, Japan (**Invited Colloquium**)

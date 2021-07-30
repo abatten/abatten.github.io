@@ -6,7 +6,7 @@ aside:
 
 ---
 
-My research revolves around studing the intergalactic medium and and how its evolution can inform us about the history of galaxies. I use a variety of techniques to probe different regions and phases of the intergalactic medium including simulations, fast radio bursts and galaxy-absorber pairs in quasar spectra.
+My research revolves around studing the intergalactic medium and and how its evolution can inform us about the history of galaxies. I use a variety of techniques to probe different regions and phases of the intergalactic medium including state-of-the-art cosmological simulations, fast radio bursts and galaxy-absorber pairs in quasar spectra.
 
 I am 'usually' a theorist, typically working with large cosmological simulations. However I do occassionally dabble with observations.
 
