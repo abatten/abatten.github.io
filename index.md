@@ -16,7 +16,7 @@ Hi! I'm Adam, an astronomer from Australia.
 </h3>
 
 <h5 style="text-align: center;">
-I study the intergalactic medium, the hot tenous material that fills the space between galaxies. 
+I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies. 
 
 </h5>
 
