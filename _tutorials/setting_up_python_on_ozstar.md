@@ -8,8 +8,8 @@ aside:
   toc: true
 cover: /assets/images/OzStar_logo.png
 date: 2021-02-02
-modify_date: 2021-02-05
-tags: tutorial supercomputing python ozstar
+modify_date: 2021-11-06
+tags: tutorial supercomputing python ozstar anaconda
 
 ---
 
