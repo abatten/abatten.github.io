@@ -19,7 +19,6 @@ Hi! I'm Adam, an astronomer from Australia.
 I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies. 
 
 </h5>
-
 I am currently a PhD candidate in the [Centre for Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the Swinburne University of Technology.
 My primary interest is using large simulations to study the composition and evolution of the intergalactic medium through cosmic time. 
 My research is part of the ARC Centre of Excellence for All-Sky Astrophysics in 3 Dimensions ([ASTRO 3D](https://astro3d.org.au/)). 

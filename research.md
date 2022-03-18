@@ -25,6 +25,8 @@ During the era of the first stars and galaxy formation, the IGM provided the ini
 ---
 ## Publications
 
+**Batten, A. J.**, et al., "Fast radio bursts as probes of feedback from active galactic nuclei", *Monthly Notices of the Royal Astronomical Society: Letters*, vol. 512, iss. 1, May 2022, Pages L49-L53, <a href="https://doi.org/10.1093/mnrasl/slac020">https://doi.org/10.1093/mnrasl/slac020</a>
+
 **Batten, A. J.**, et al., "The cosmic dispersion measure in the EAGLE simulations", *Monthly Notices of the Royal Astronomical Society*, vol. 505, iss. 4, August 2021, Pages 5356–5369, <a href="https://doi.org/10.1093/mnras/stab1528">https://doi.org/10.1093/mnras/stab1528</a>
 
 **Batten, A. J.**, "Fruitbat: A Python Package for Estimating Redshifts of Fast Radio Bursts", *The Journal of Open Source Software*, vol. 4, no. 37, 2019. 
