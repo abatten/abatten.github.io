@@ -1,43 +1,90 @@
-header:
-  - titles:
-      # @start locale config
-      en      : &EN       Home
-    url: /index.html
-#  - titles:
-#      en      : &EN       Research
-#    url: /research.html
-#  - titles:
-#      # @start locale config
-#      en      : &EN       About
-#      en-GB   : *EN
-#      en-US   : *EN
-#      en-CA   : *EN
-#      en-AU   : *EN
-#      zh-Hans : &ZH_HANS  关于
-#      zh      : *ZH_HANS
-#      zh-CN   : *ZH_HANS
-#      zh-SG   : *ZH_HANS
-#      zh-Hant : &ZH_HANT  關於
-#      zh-TW   : *ZH_HANT
-#      zh-HK   : *ZH_HANT
-#      ko      : &KO       소개
-#      ko-KR   : *KO
-#      fr      : &FR       À propos
-#      fr-BE   : *FR
-#      fr-CA   : *FR
-#      fr-CH   : *FR
-#      fr-FR   : *FR
-#      fr-LU   : *FR
-#      # @end locale config
-#    url: /about.html
-  - titles:
-      en      : &EN Research
-    url: /research
+- title: Home
+  url: "/"
+  side: left
 
-  - titles:
-      en      : &EN Tutorials
-    url: /tutorials
+    #- title: Getting Started
+    #  url: "/getting-started/"
+    #  side: left
 
-  - titles:
-      en      : &EN Media & Outreach
-    url: /outreach
+- title: Research
+  url: "/research/"
+  side: left
+  dropdown:
+    - title: "Science Talks"
+      url: "/talks/"
+
+- title: Tutorials
+  url: "/tutorials/"
+  side: left
+    #  dropdown:
+    #  - title: "Tutorial Archive"
+    #    url: "/tutorials/archive/"
+
+    #- title: Articles
+    #  url: "/articles/"
+    #  side: left
+
+- title: Media & Outreach
+  url: "/outreach/"
+  side: left
+
+
+    #- title: "Templates"
+    #  url: "/design/"
+    #side: left
+    #  dropdown:
+    #- title: "Grid & Colors"
+    #    url: "/design/grid/"
+    #  - title: "Typography"
+    #    url: "/design/typography/typography/"
+    #  - title: "Page/Post"
+    #    url: "/design/page/"
+    #  - title: "Post-Left-Sidebar"
+    #    url: "/design/post-left-sidebar/"
+    #  - title: "Post-Right-Sidebar"
+    #    url: "/design/post-right-sidebar/"
+    #  - title: "Page Full-Width"
+    #    url: "/design/page-fullwidth/"
+    #  - title: "Blog-Page"
+    #    url: "/blog/"
+    #  - title: "Video"
+    #    url: "/design/video/"
+    #  - title: "Gallery"
+    #    url: "/design/gallery/"
+    #  - title: "Portfolio"
+    #    url: "/design/portfolio/"
+
+    #- title: "Header Styles"
+    #  url: "/headers/"
+    #  side: left
+    #  dropdown:
+    #  - title: "Header with Full-Width-Image"
+    #    url: "/design/header-full-width-image/"
+    #  - title: "Header with Image and Pattern"
+    #    url: "/design/header-image-pattern/"
+    #  - title: "Header with image and color"
+    #    url: "/design/header-image-color/"
+    #  - title: "Header Only With Logo"
+    #    url: "/design/header-logo-only/"
+    #  - title: "Header With Text"
+    #  url: "/design/header-with-text/"
+      #  - title: "No Header"
+    #    url: "/design/no-header/"
+      #  - title: "No Header but Image"
+    #    url: "/design/no-header-but-image/"
+
+      #- title: Documentation
+  #  url: "/documentation/"
+    #  side: left
+    #  dropdown:
+    #  - title: "Changelog"
+    #    url: "/changelog/"
+      #  - title: "Roadmap"
+    #    url: "/roadmap/"
+
+      #- title: Blog
+  #  url: "/blog/"
+    #  side: left
+    #  dropdown:
+    #  - title: "Blog Archive"
+    #    url: "/blog/archive/"

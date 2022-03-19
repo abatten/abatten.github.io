@@ -1,17 +1,42 @@
 ---
-layout: article
-title: Setting up Python on OzSTAR
-author: Adam Batten
-show_author_profile: true
-sharing: true
-aside:
-  toc: true
-cover: /assets/images/OzStar_logo.png
+layout: page-fullwidth
+title: "Setting up Python on OzStar"
+subheadline: ""
+meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
+teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
+header:
+    image: /images/OzStar_logo.png
+    background-color: "#262930"
+    caption: This is a caption for the header image with link
+    caption_url: https://unsplash.com/
+image:
+    thumb:  /images/titan.jpg
+    homepage: titan.jpg
+    caption: Image by Antonio
+    caption_url: "http://www.aisleone.net/"
+categories:
+    - Python
+    - Supercomputing
+    - OzSTAR
+    - Anaconda
+
 date: 2021-02-02
 modify_date: 2021-11-06
-tags: tutorial supercomputing python ozstar anaconda
 
+permalink           : "/tutorials/setting_up_python_on_ozstar/"
 ---
+<div class="row">
+<div class="medium-4 medium-push-8 columns" markdown="1">
+<div class="panel radius" markdown="1">
+**Table of Contents**
+{: #toc }
+*  TOC
+{:toc}
+</div>
+</div><!-- /.medium-4.columns -->
+
+<div class="medium-8 medium-pull-4 columns" markdown="1">
+
 
 ## Getting Started with using Conda Environments on OzStar
 
