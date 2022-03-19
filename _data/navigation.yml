@@ -33,6 +33,10 @@
   side: left
 
 
+- title: Contact
+  url: "/contact/"
+  side: left
+
     #- title: "Templates"
     #  url: "/design/"
     #side: left
