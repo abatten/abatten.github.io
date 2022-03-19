@@ -1,6 +1,6 @@
 ---
 layout: page-fullwidth
-title: "Setting up Python on OzStar"
+title: "Setting up Python on OzSTAR"
 subheadline: "tutorial"
 
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
