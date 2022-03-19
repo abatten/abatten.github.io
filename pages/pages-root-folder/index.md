@@ -12,7 +12,7 @@ header:
 widget1:
   title: "Recent Publication"
   url: 'https://arxiv.org/abs/2109.13472'
-  image: widget-1-302x182.jpg
+  image: CDF_distance.png
   text: 'Check out my latest research paper titled: <i>Fast radio bursts as probes of feedback from active galactic nuclei</i>'
 
 widget2:
@@ -21,11 +21,11 @@ widget2:
   image: fruitbat_badge1.png
   text: I am the lead developer on <i>Fruitbat</i>. A Python package for estimating redshifts for Fast Radio bursts.
 
-#widget3:
-#  title: "Recent Media and Outreach"
-#  url: 'http://phlow.github.io/feeling-responsive/info/'
-#  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-#  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+widget3:
+  title: "Science Talks: Recordings & Slides"
+  url: '/talks/'
+  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
+  image: adam_asa_2021.jpeg
 
 #
 # Use the call for action to show a button on the frontpage
