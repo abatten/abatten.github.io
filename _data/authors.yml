@@ -8,7 +8,7 @@
 phlow: # replace this with your info
   name: "Adam Batten"
   siterole: "Astronomer & Data Analyst"
-  uri: http://adambatten.com
+  url: http://adambatten.com
   email:
   twitter: "@adamjbatten"
 # you can add more authors here

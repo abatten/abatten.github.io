@@ -1,12 +1,22 @@
 ---
-layout: article
-title: "PintAU2020 Online: What's the Matter?"
-date: 2020-05-13
-author: Adam Batten
-subtitle: "Pint of Science AU Online 2020"
-cover: "/assets/images/pint_au_online.jpg"
-tags: outreach
-lastupdated: 2020-12-14
+layout: video
+show_meta: false
+title: "PintAU2020: What's the Matter?"
+subheadline: "Panel Interview for Pint of Science 2020"
+teaser: "If you want to show videos in a large manner, the video template is the right choice."
+header:
+    title: ' '
+image:
+    thumb:  pint_au_online_image.jpg
+    homepage: pint_au_online_image.jpg
+    caption: Image by Antonio
+    caption_url: "http://www.aisleone.net/"
+tags:
+    - post format
+categories:
+    - Livestream
+iframe: "<iframe width='970' height='546' src='https://www.youtube.com/embed/mMX2F1nXwr0?start=270' frameborder='0' allowfullscreen></iframe>"
+
 ---
 
 In 2020 the Pint of Science festival went online and brought science into the homes of thounds of people across australia.
@@ -17,10 +27,5 @@ The panel was live streamed on Facebook and Youtube and we would each have about
 Throughout the live stream the public could send in their questions for us to answer live.
 
 My two co-panelists were Kyla Adams and A/Prof. Joe Khachan and we were hosted by Kirsten Banks. You can watch the recording of the live stream on YouTube with the following link or in the video player below. <a href="https://www.youtube.com/embed/mMX2F1nXwr0?start=270">https://www.youtube.com/embed/mMX2F1nXwr0?start=270</a>
-
-
-<div class="embed-responsive embed-responsive-16by9" style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/mMX2F1nXwr0?start=270" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 

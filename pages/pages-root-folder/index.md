@@ -6,25 +6,27 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: cosmic-web.jpg
+  title: ' ' 
+  image_fullwidth: milky-way.jpg
 
 widget1:
-  title: "Blog & Portfolio"
-  url: 'http://phlow.github.io/feeling-responsive/blog/'
+  title: "Recent Publication"
+  url: 'https://arxiv.org/abs/2109.13472'
   image: widget-1-302x182.jpg
-  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+  text: 'Check out my latest research paper titled: <i>Fast radio bursts as probes of feedback from active galactic nuclei</i>'
 
 widget2:
-  title: "Why use this theme?"
-  url: 'http://phlow.github.io/feeling-responsive/info/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  title: "Fruitbat"
+  url: 'https://github.com/abatten/fruitbat'
+  image: fruitbat_badge1.png
+  text: I am the lead developer on <i>Fruitbat</i>. A Python package for estimating redshifts for Fast Radio bursts.
 
-widget3:
-  title: "Download Theme"
-  url: 'https://github.com/Phlow/feeling-responsive'
-  image: widget-github-303x182.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. The code is well-documented and explains you how it works.'
+#widget3:
+#  title: "Recent Media and Outreach"
+#  url: 'http://phlow.github.io/feeling-responsive/info/'
+#  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
+#  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+
 #
 # Use the call for action to show a button on the frontpage
 #
@@ -35,10 +37,10 @@ widget3:
 # to use the main color or success, alert or secondary.
 # To change colors see sass/_01_settings_colors.scss
 #
-callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
+#callforaction:
+#  url: https://tinyletter.com/feeling-responsive
+#  text: Inform me about new updates and features ›
+#  style: alert
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
@@ -48,27 +50,16 @@ homepage: true
 ---
 
 
-<div style="width:30%; margin:0 auto;" align="center" markdown="1">
-![Avatar](/assets/images/avatar.jpg){:.small.circle.border.shadow}
-</div> 
+## Hi! I'm Adam, an astronomer from Australia. 
+{: style="text-align: center;"}
 
-<h1 style="text-align: center;">
-Adam Batten
-</h1>
+### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies. 
+{: style="text-align: center;"}
 
-<h3 style="text-align: center;">
-Hi! I'm Adam, an astronomer from Australia. 
-</h3>
 
-<h5 style="text-align: center;">
-I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies. 
-
-</h5>
-I am currently a PhD candidate in the [Centre for Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the Swinburne University of Technology.
-My primary interest is using large simulations to study the composition and evolution of the intergalactic medium through cosmic time. 
-My research is part of the ARC Centre of Excellence for All-Sky Astrophysics in 3 Dimensions ([ASTRO 3D](https://astro3d.org.au/)). 
-
-You can see more about my research on my [research page](research.html) and my list of publications on <a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2FJVI0wKk5ThW2taKTMT2oEQ)&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a>.
+<div style="text-align: center;">
+<img class="t60" src="{{ site.urlimg }}avatar.jpg" alt="A portrait photo of Adam Batten" height="30%" width="30%" style="border-radius: 50%">
+</div>
 
 ### Contact Details
 Email: abatten*[at]*swin.edu.au

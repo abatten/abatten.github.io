@@ -1,10 +1,14 @@
-- title: Home
+- title: Adam Batten
   url: "/"
   side: left
 
     #- title: Getting Started
     #  url: "/getting-started/"
     #  side: left
+
+- title: About
+  url: "/About/"
+  side: left
 
 - title: Research
   url: "/research/"

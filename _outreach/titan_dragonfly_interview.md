@@ -1,13 +1,30 @@
 ---
-layout: article
+layout: page-fullwidth
 title: "Radio Interview: Dragonfly Drone"
+subheadline: "The World Today, ABC"
+meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
+teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
+header:
+    image: the_world_today_titan.jpg
+    background-color: "#262930"
+    caption: This is a caption for the header image with link
+    caption_url: https://unsplash.com/
+image:
+    thumb:  the_world_today_titan.jpg
+    homepage: the_world_today_titan.jpg
+    caption: Image by Antonio
+    caption_url: "http://www.aisleone.net/"
+categories:
+    - Radio
+
 date: 2019-06-28
-author: Adam Batten
-subtitle: "ABC The World Today"
-cover: "/assets/images/the_world_today_titan.jpg"
-tags: outreach radio interview
-lastupdated: 2020-12-14
+modify_date: 2020-12-14
+
+permalink           : "/tutorials/setting_up_python_on_ozstar/"
 ---
+
+
+
 
 In June 2019, NASA announced that they would be sending a drone to one of Saturn's moons: Titan.  
 
