@@ -15,7 +15,7 @@ My research revolves around studing the intergalactic medium and and how its evo
 
 I am 'usually' a theorist, typically working with large cosmological simulations. However I do occassionally dabble with observations.
 
-My list of publications are avaliable on <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Batten%2C%20Adam%22%20orcid%3A%220000-0001-7599-6488%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a>, via my <a href="https://orcid.org/0000-0001-7599-6488">ORCID page</a> and <a href="https://scholar.google.com/citations?user=aRUJW5UAAAAJ&hl=en">google scholar</a>.
+My list of publications are avaliable on <a href="https://ui.adsabs.harvard.edu/public-libraries/JVI0wKk5ThW2taKTMT2oEQ">ADS</a>, via my <a href="https://orcid.org/0000-0001-7599-6488">ORCID page</a> and <a href="https://scholar.google.com/citations?user=aRUJW5UAAAAJ&hl=en">google scholar</a>.
 
 A list of my recent scientific talks can be found on my [talks](/talks) page.
 
