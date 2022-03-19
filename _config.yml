@@ -38,7 +38,7 @@ improve_content: https://github.com/abatten/abatten.github.io/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'
+urlimg: 'https://adambatten.com/images/'
 
 #urlimg: 'https://github.com/abatten/abatten.github.io/tree/text-theme/assets/images/'
 
