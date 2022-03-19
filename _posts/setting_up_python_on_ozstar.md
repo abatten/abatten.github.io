@@ -1,17 +1,42 @@
 ---
-layout: article
-title: Setting up Python on OzSTAR
-author: Adam Batten
-show_author_profile: true
-sharing: true
-aside:
-  toc: true
-cover: /assets/images/OzStar_logo.png
+layout: page-fullwidth
+title: "Setting up Python on OzStar"
+subheadline: "tutorial"
+meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
+teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
+header:
+    image: OzStar_logo.png
+    background-color: "#262930"
+    caption: This is a caption for the header image with link
+    caption_url: https://unsplash.com/
+image:
+    thumb:  OzStar_logo.png
+    homepage: OzStar_logo.png 
+    caption: Image by Antonio
+    caption_url: "http://www.aisleone.net/"
+categories:
+    - Python
+    - Supercomputing
+    - OzSTAR
+    - Anaconda
+
 date: 2021-02-02
 modify_date: 2021-11-06
-tags: tutorial supercomputing python ozstar anaconda
 
+permalink           : "/tutorials/setting_up_python_on_ozstar/"
 ---
+<div class="row">
+<div class="medium-4 medium-push-8 columns" markdown="1">
+<div class="panel radius" markdown="1">
+**Table of Contents**
+{: #toc }
+*  TOC
+{:toc}
+</div>
+</div><!-- /.medium-4.columns -->
+
+<div class="medium-8 medium-pull-4 columns" markdown="1">
+
 
 ## Getting Started with using Conda Environments on OzStar
 
@@ -19,8 +44,9 @@ This is a short guide on how to set up Python on [OzSTAR](https://supercomputing
 
 If you are unfamiliar with [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) before this guide, they may feel a little different, but will make using Python on OzSTAR significantly easier in the long run. 
 
+<mark>
 Note: This is primarily aimed at people that will be using OzSTAR, and may not be applicable in other circumstances. 
-{:.warning}
+</mark>
 
 ### This Tutorial Covers:
 - [Preparation](#preparation)
@@ -51,9 +77,10 @@ Loading modules or libraries that are required by Python packages is fine.
 
 You can ensure that all modules have been unloaded from your session use `module perge`.
 
+<mark>
 In case you are unfamiliar, OzSTAR uses modules to manage the software it has installed. If you want to use a module you first have to load it. To load a module use the following command: `module load <module_name>/<software_version>`.
 You can search for modules using `module spider <module_name>`. To view a list of all the modules you have loaded use `module ls`.
-{:.info}
+</mark>
 
 ## Loading Anaconda
 For managing Python on OzSTAR I suggest using `anaconda3` and `conda` environments. 
@@ -68,8 +95,9 @@ module load anaconda3/5.0.1
 ```
 The reason for using `module purge` all loaded modules first is to make absolutely sure that no paths are being overridden by `anaconda3`. I highly recommend using your `.bashrc` or `.bash_profile` for this, such that you don't have to do it manually every time you login.
 
+<mark>
 The reason for using `anaconda3/5.0.1` rather than `anaconda3/5.1.0` (which is also available on OzSTAR), is because the latter version has a bug where OzSTAR will not correctly set the paths to Anaconda's commands (like `conda`; `activate`; `deactivate`). Instead, it attempts to use the ones from `anaconda3/5.0.1` whenever any environment besides the default is [activated](#activating-an-anaconda-environment). This means that it once an environment is [activated](#activating-an-anaconda-environment) using `anaconda3/5.1.0`, it becomes impossible to [deactivate](#deactivate-an-anaconda-environment) the environment again.
-{:.warning}
+</mark>
 
 
 <b>Example:</b>
@@ -84,9 +112,9 @@ module load git/2.16.0
 ```
 
 ## Using Conda environments
-
+<mark>
 TL;DR: Create custom environments using `conda create -n <env_name> python==<python_version>`, activate with `source activate <environment_name>` and deactivate with `source deactivate`.
-{:.success}
+</mark>
 
 ### Why use a Conda Environment?
 The main purpose to using `conda` environments is to create an isolated environment for your project. This means you don't have to worry about if different projects you are working on require different versions of software.
@@ -144,8 +172,9 @@ Keep a note of the [issue with deactivating environments](#loading-anaconda) if 
 
 
 ## Issues with Home Directory Quota
+<mark>
 TL;DR: If you are running out of inode space in your home directory, you can move your `.conda` to Lustre with `mv /home/<username>/.conda /fred/oz<group_number>/<username>` and make a symbolic link with `ln -s /fred/oz<group_number>/<username>/.conda /home/<username>/.conda`
-{:.success}
+</mark>
 
 The main downside with using this approach to use Python on OzSTAR is that `conda` environments produce a large number of small files.
 If you have many environments or large ones, it is possible that you will hit the file limit (aka inode limit) in your home directory (which is set to 100k).

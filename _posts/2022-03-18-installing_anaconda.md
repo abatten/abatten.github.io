@@ -57,7 +57,7 @@ You should be able to follow these instructions to install Anaconda on your syst
 - After the download completes, double click on the file to open the installer. It should like Figure 2 on Windows 10 or Figure 7 on MacOS Big Sur.
 - Then follow either the [Windows 10](#windows-10-installation) or [MacOS](#macos-installation) installation instructions that follows.
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_0.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_0.png"></p> 
 <p><small align="center">Figure 1 - Anaconda installation options. Choose the one that is appropriate for your computer.</small></p>
 
 ### Windows 10 Installation
@@ -67,13 +67,13 @@ You should be able to follow these instructions to install Anaconda on your syst
 - Tick the boxes that say *'Add Anaconda3 to my PATH environment variable'* and *'Register Anaconda3 as my default Python 3.8'*. See Figure 4. It will likely have a red warning that says the first option is not recommended, because it 'makes anaconda get found before previously installed software', but that is actually what we want to happen. It might also say a different number to Python 3.8 (i.e Python 3.9, 3.10, etc..), this is also okay.
 - Continue to Section [Anaconda Navigator](#anaconda-navigator).
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_1.png"></p>
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_1.png"></p>
 <p align = "center"><small>Figure 2 - Anaconda Installer (Windows 10)</small></p>
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_2_windows.png"></p>
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_2_windows.png"></p>
 <p align = "center"><small>Figure 3 - Anaconda License Agreement (Windows 10)</small></p>
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_6_windows.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_6_windows.png"></p> 
 <p align = "center"><small>Figure 4 - Anaconda installation options on Windows 10. You want to tick both boxes.</small></p>
 
 
@@ -85,11 +85,11 @@ You should be able to follow these instructions to install Anaconda on your syst
 - Continue to Section [Anaconda Navigator](#anaconda-navigator).
 
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_1_mac.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_1_mac.png"></p> 
 <p align = "center"><small>Figure 6 - Anaconda Installer (MacOS)</small></p>
 
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_install_2_mac.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_install_2_mac.png"></p> 
 <p align = "center"><small>Figure 7 - Anaconda License Agreement (MacOS)</small></p>
 
 
@@ -102,8 +102,8 @@ To check that Anaconda has been correctly installed we will attempt to open the 
 
 The program should look something similar to Figures 8 (Windows) and 9 (MacOS). Note that you may have different icons or tiles showing based on what is already installed on your computer. The important thing you should be able to see is something called 'JupyterLab' and 'Jupyter Notebook'. If you can see both of these, then it has installed correctly and you are ready to start using Anaconda and Python.
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_navigator_windows.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_navigator_windows.png"></p> 
 <p align = "center"><small>Figure 8 - Anaconda Navigator in Windows 10</small></p>
 
-<p><img src = "/assets/images/tutorials/anaconda_install/anaconda_navigator_macos.png"></p> 
+<p><img src = "/images/tutorials/anaconda_install/anaconda_navigator_macos.png"></p> 
 <p align = "center"><small>Figure 9 - Anaconda Navigator in MacOS</small></p>
