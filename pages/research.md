@@ -5,14 +5,11 @@ title               : "Research"
 subheadline         : ""
 teaser              : ""
 header:
-   image_fullwidth  : "header_homepage_13.jpg"
+   title            : ' '
+   image_fullwidth  : "milky-way.jpg"
 permalink           : "/research/"
 ---
 
-
-<div style="width:30%; margin:0 auto;" align="center" markdown="1">
-![Adam presenting at the ASA in 2021](assets/images/adam_asa_2021.jpeg){:.large.circle.border.shadow}
-</div> 
 
 My research revolves around studing the intergalactic medium and and how its evolution can inform us about the history of galaxies. I use a variety of techniques to probe different regions and phases of the intergalactic medium including state-of-the-art cosmological simulations, fast radio bursts and galaxy-absorber pairs in quasar spectra.
 
@@ -42,19 +39,7 @@ During the era of the first stars and galaxy formation, the IGM provided the ini
 
 ---
 ## Software
-<div class="item">
-  <div class="item__image">
-    <img class="image image--sm" src="/assets/images/fruitbat_badge1.png"/>
-  </div>
-  <div class="item__content">
-    <div class="item__header">
-      <h5>FRUITBAT</h5>
-    </div>
-    <div class="item__description">
-      <p>FRUITBAT is an open source fast radio burst (FRB) redshift estimation package written in Python.</p>
-      <a href="https://github.com/abatten/fruitbat">Repo on Github</a>
-    </div>
-  </div>
-</div>
-
+#### FRUITBAT
+ FRUITBAT is an open source fast radio burst (FRB) redshift estimation package written in Python.
+ <a href="https://github.com/abatten/fruitbat"> Repo on Github</a>
 

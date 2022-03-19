@@ -24,8 +24,8 @@ widget2:
 widget3:
   title: "Science Talks: Recordings & Slides"
   url: '/talks/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
   image: adam_asa_2021.jpeg
+  text: 'See recordings and slides from my previous conference and invited talks'
 
 #
 # Use the call for action to show a button on the frontpage

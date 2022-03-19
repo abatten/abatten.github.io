@@ -18,6 +18,10 @@ categories:
     - tutorial
 
 permalink           : "/tutorials/submitting_jobs_on_ozstar/"
+
+post_date: 2020-09-08
+modify_date: 2021-04-27
+
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
@@ -290,3 +294,4 @@ This tutorial is not meant as a comprehensive article covering all there is to k
 ### Acknowledgements
 Thank you to [Ellert van der Velden (@1313e)](https://github.com/1313e/) for useful feedback on the draft of this article.
 
+{% include next-previous-post-in-category %}

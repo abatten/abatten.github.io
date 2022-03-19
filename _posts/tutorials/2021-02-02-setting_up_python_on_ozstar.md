@@ -20,7 +20,7 @@ image:
 categories:
     - tutorial
 
-date: 2021-02-02
+post_date: 2021-02-02
 modify_date: 2021-11-06
 
 permalink           : "/tutorials/setting_up_python_on_ozstar/"

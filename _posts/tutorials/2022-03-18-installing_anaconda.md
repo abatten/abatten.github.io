@@ -1,21 +1,24 @@
 ---
 layout: page-fullwidth
 title: "Installing Python with Anaconda"
-subheadline: ""
+subheadline: "Python | Anaconda"
 meta_teaser: "A guide for installing Python for the first time."
 teaser: "A guide for installing Python for the first time."
 header:
-    image: homepage_typography.jpg
+    image: tutorials/anaconda_install/Anaconda_Logo.png
     background-color: "#262930"
     caption: This is a caption for the header image with link
     caption_url: https://unsplash.com/
 image:
-    thumb:  homepage_typography-thumb.jpg
-    homepage: homepage_typography.jpg
-    caption: Image by Antonio
-    caption_url: "http://www.aisleone.net/"
+    thumb:  tutorials/anaconda_install/Anaconda_Logo.png
+    homepage: tutorials/anaconda_install/Anaconda_Logo.png 
+    caption: ' '
+    caption_url: ' ' 
 categories:
     - tutorial
+
+post_date: 2022-03-18
+modify_date: 2022-03-19
 
 permalink           : "/tutorials/installing_anaconda/"
 ---

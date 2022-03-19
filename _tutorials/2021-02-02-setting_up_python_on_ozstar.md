@@ -1,9 +1,11 @@
 ---
 layout: page-fullwidth
-title: "Setting up Python on OzStar"
-subheadline: "tutorial"
+title: "Setting up Python on OzSTAR"
+subheadline: "Python | Supercomputing | OzSTAR"
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
+
 teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
+
 header:
     image: OzStar_logo.png
     background-color: "#262930"
@@ -14,13 +16,11 @@ image:
     homepage: OzStar_logo.png 
     caption: Image by Antonio
     caption_url: "http://www.aisleone.net/"
-categories:
-    - Python
-    - Supercomputing
-    - OzSTAR
-    - Anaconda
 
-date: 2021-02-02
+categories:
+    - tutorial
+
+post_date: 2021-02-02
 modify_date: 2021-11-06
 
 permalink           : "/tutorials/setting_up_python_on_ozstar/"
@@ -199,3 +199,4 @@ It is advised that you should be using Python 3 for almost all of your projects.
 ## Acknowledgements
 A big thank to [Ellert van der Velden (@1313e)](https://github.com/1313e/) who wrote the backbone of this tutorial in a text document one day on Slack and for useful feedback on my interpretation of the document that I have presented in this article.
 
+{% include next-previous-post-in-category %}

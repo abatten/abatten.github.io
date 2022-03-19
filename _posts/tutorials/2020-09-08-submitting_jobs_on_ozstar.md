@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 title: "Submitting a Job on a Supercomputer"
-subheadline: ""
+subheadline: "Supercomputing | OzSTAR | SLURM"
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
 teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
 header:
@@ -18,6 +18,10 @@ categories:
     - tutorial
 
 permalink           : "/tutorials/submitting_jobs_on_ozstar/"
+
+post_date: 2020-09-08
+modify_date: 2021-04-27
+
 ---
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">

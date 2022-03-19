@@ -5,7 +5,8 @@ title               : "About"
 subheadline         : ""
 teaser              : ""
 header:
-   image_fullwidth  : "header_homepage_13.jpg"
+   title            : ' '
+   image_fullwidth  : "milky-way.jpg"
 permalink           : "/about/"
 ---
 
