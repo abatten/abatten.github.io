@@ -2,8 +2,11 @@
 layout: page-fullwidth
 title: "Setting up Python on OzStar"
 subheadline: "tutorial"
+
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
+
 teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
+
 header:
     image: OzStar_logo.png
     background-color: "#262930"
