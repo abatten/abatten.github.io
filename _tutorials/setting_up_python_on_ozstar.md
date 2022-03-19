@@ -1,8 +1,7 @@
 ---
 layout: page-fullwidth
 title: "Setting up Python on OzSTAR"
-subheadline: "tutorial"
-
+subheadline: "Python | Supercomputing | OzSTAR"
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
 
 teaser: "This is a short guide on how to set up Python on OzSTAR, the supercomputer located at the Swinburne University of Technology. This will guide you through setting up Conda enviroments and some of the pitfalls you may encounter along the way." 
@@ -17,11 +16,9 @@ image:
     homepage: OzStar_logo.png 
     caption: Image by Antonio
     caption_url: "http://www.aisleone.net/"
+
 categories:
-    - Python
-    - Supercomputing
-    - OzSTAR
-    - Anaconda
+    - tutorial
 
 date: 2021-02-02
 modify_date: 2021-11-06

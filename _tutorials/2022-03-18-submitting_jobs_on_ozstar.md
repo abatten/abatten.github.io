@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 title: "Submitting a Job on a Supercomputer"
-subheadline: "Supercomputing"
+subheadline: "Supercomputing | OzSTAR | SLURM"
 meta_teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
 teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR supercomputer."
 header:

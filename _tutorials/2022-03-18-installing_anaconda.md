@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 title: "Installing Python with Anaconda"
-subheadline: ""
+subheadline: "Python | Anaconda"
 meta_teaser: "A guide for installing Python for the first time."
 teaser: "A guide for installing Python for the first time."
 header:
