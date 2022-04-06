@@ -49,6 +49,8 @@ permalink: /index.html
 homepage: true
 ---
 
+# Dr. Adam Batten
+{: style="text-align: center;"}
 
 ## Hi! I'm Adam, an astronomer from Australia. 
 {: style="text-align: center;"}
