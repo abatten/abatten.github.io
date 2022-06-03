@@ -10,6 +10,9 @@ header:
 permalink           : "/talks/"
 ---
 
+Note: To save on file size, these talks have been experoted as PDFs. As a result, any talks that have videos included will contain an image instead of the video. If you wish to see the videos on the slides, please get in contact with me and I *might* be able to help you out.
+
+
 ## Recent Invited Talks and Colloquiums
 - 2021-07-30: Macquarie University, Sydney, Australia (**Invited Colloquium**)
     - *"The Intergalactic Medium through the lens of Fast Radio Bursts and Hydrodynamic Simulations"*

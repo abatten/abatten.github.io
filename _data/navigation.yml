@@ -14,6 +14,10 @@
   url: "/research/"
   side: left
   dropdown:
+    - title: "Research Interests"
+      url: "/research/#research-interests"
+    - title: "Publications"
+      url: "/research/#publications"
     - title: "Science Talks"
       url: "/talks/"
 
