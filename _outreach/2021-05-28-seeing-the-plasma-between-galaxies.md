@@ -14,7 +14,7 @@ image:
 categories:
     - Podcast
 
-date: 2021-05-28
+post_date: 2021-05-28
 modify_date: 2022-05-13
 
 permalink           : "/outreach/seeing-the-plasma-between-galaxies/"

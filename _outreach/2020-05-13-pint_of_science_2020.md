@@ -18,6 +18,9 @@ categories:
     - Livestream
 iframe: "<iframe width='970' height='546' src='https://www.youtube.com/embed/mMX2F1nXwr0?start=270' frameborder='0' allowfullscreen></iframe>"
 
+post_date: 2020-05-13
+modify_date: 2022-08-20
+
 ---
 
 In 2020 the Pint of Science festival went online and brought science into the homes of thounds of people across australia.

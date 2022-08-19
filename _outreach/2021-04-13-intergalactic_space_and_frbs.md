@@ -17,7 +17,7 @@ image:
 categories:
     - Public Talk
 
-date: 2021-04-27
+post_date: 2021-04-27
 modify_date: 2022-08-20
 
 permalink           : "/outreach/igm_frbs_and_the_missing_matter/"

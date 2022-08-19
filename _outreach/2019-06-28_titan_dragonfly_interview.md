@@ -17,7 +17,7 @@ image:
 categories:
     - Radio
 
-date: 2019-06-28
+post_date: 2019-06-28
 modify_date: 2020-12-14
 
 permalink           : "/outreach/titan_dragonfly_interview/"

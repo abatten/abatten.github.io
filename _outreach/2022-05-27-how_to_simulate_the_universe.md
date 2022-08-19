@@ -17,7 +17,7 @@ image:
 categories:
     - Public Talk
 
-date: 2022-05-27
+post_date: 2022-05-27
 modify_date: 2022-08-20
 
 permalink           : "/outreach/how_to_simulate_the_universe/"
