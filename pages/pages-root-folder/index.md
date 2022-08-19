@@ -60,12 +60,15 @@ homepage: true
 
 
 <div style="text-align: center;">
-<img class="t60" src="{{ site.urlimg }}avatar.jpg" alt="A portrait photo of Adam Batten" height="30%" width="30%" style="border-radius: 50%">
+<img class="t60" src="{{ site.urlimg }}avatar_2.jpg" alt="A portrait photo of Adam Batten" height="30%" width="30%" style="border-radius: 50%">
 </div>
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
+#### Postdoctoral Research Associate - Swinburne University of Techology
+{: style="text-align: center;"}
+
+<!---<div id="videoModal" class="reveal-modal large" data-reveal="">
   <div class="flex-video widescreen vimeo" style="display: block;">
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
   </div>
   <a class="close-reveal-modal">&#215;</a>
-</div>
+</div>-->
