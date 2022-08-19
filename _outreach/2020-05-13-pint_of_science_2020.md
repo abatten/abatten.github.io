@@ -2,7 +2,7 @@
 layout: video
 show_meta: false
 title: "PintAU2020: What's the Matter?"
-subheadline: "Panel Interview for Pint of Science 2020"
+subheadline: "Panel Interview for Pint of Science"
 teaser: "In 2020 the Pint of Science festival went online and brought science into the homes of thounds of people across australia. As part of the festival it included four moderated panels. I was an invited speaker on the “What’s the Matter?” live panel that focused on astronomy, quantum mechanics and nuclear fusion."
 header:
     title: ' '
@@ -14,6 +14,7 @@ image:
 tags:
     - post format
 categories:
+    - Public Talk
     - Livestream
 iframe: "<iframe width='970' height='546' src='https://www.youtube.com/embed/mMX2F1nXwr0?start=270' frameborder='0' allowfullscreen></iframe>"
 
