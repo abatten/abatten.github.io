@@ -16,7 +16,6 @@ image:
     caption_url: ' ' 
 categories:
     - tutorial
-
 post_date: 2022-08-19
 modify_date: 2022-08-19
 
@@ -78,15 +77,15 @@ This `index.html` is the webpage for the homepage of the website. Everything tha
 Now to push the website template to github. You will need to add the remote repository as the origin.:
 
 ```
-  git init
-  git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io
+git init
+git remote add origin https://github.com/<USERNAME>/<USERNAME>.github.io
 ```
-Then commit and push to the origin.:
+Then commit and push to the origin:
 
 ```
-  git add -A
-  git commit -m "Initial commit of my website"
-  git push origin main
+git add -A
+git commit -m "Initial commit of my website"
+git push origin main
 ```
 
 You should now be able to go to the url ``<USERNAME>.github.io`` and view your website.
