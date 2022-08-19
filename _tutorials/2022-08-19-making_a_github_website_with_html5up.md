@@ -6,7 +6,7 @@ meta_teaser: "The basics of setting up a static website for free using Github pa
 teaser: "The basics of setting up a static website for free using Github pages and html templates from HTML5up."
 header:
     image: github_html5up.png
-    background-color: "#262930"
+    background-color: "#d97a73"
     caption: ' '
     caption_url: ' '
 image:
