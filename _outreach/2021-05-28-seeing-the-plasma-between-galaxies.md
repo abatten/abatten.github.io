@@ -7,8 +7,8 @@ teaser: "How do you see matter that doesn't give off light? Adam Batten is using
 header: no
 image:
     title: pod-of-science.jpg 
-    thumb:  pod-of-science.png
-    homepage: pod-of-science.png
+    thumb:  pod-of-science.jpg
+    homepage: pod-of-science.jpg
     caption:
     caption_url:
 categories:
