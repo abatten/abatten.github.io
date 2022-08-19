@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Tutorial Archive"
-teaser: "Check out all of my tutorials!. Click on a headline to read the teaser."
+title: "Outreach Archive"
+teaser: "Check out all of my outreachs!. Click on a headline to read the teaser."
 breadcrumb: true
 header:
    image_fullwidth: header_unsplash_8.jpg
-permalink: "tutorials/archive/"
+permalink: "outreach/archive/"
 ---
 <div id="blog-index" class="row">
 	<div class="small-12 columns t30">
@@ -14,12 +14,12 @@ permalink: "tutorials/archive/"
 
 		<dl class="accordion" data-accordion>
 			{% assign counter = 1 %}
-			{% for tutorial in site.tutorials limit:1000 %}
+			{% for outreach in site.outreach limit:1000 %}
 			<dd class="accordion-navigation">
-			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if tutorial.subheadline %}{{ tutorial.subheadline }} › {% endif %}<strong>{{ tutorial.title }}</strong></a>
+			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if outreach.subheadline %}{{ outreach.subheadline }} › {% endif %}<strong>{{ outreach.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
-					{% if tutorial.meta_description %}{{ tutorial.meta_description | strip_html | escape }}{% elsif tutorial.teaser %}{{ tutorial.teaser | strip_html | escape }}{% endif %}
-					<a href="{{ site.url }}{{ site.baseurl }}{{ tutorial.url }}" title="Read {{ tutorial.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
+					{% if outreach.meta_description %}{{ outreach.meta_description | strip_html | escape }}{% elsif outreach.teaser %}{{ outreach.teaser | strip_html | escape }}{% endif %}
+					<a href="{{ site.url }}{{ site.baseurl }}{{ outreach.url }}" title="Read {{ outreach.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>
 				</div>
 			</dd>
 			{% assign counter=counter | plus:1 %}

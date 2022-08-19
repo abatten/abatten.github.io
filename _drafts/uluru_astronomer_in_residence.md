@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page-fullwidth
 title: Uluru Astronomer in Residence
 date: 2018-10-23
 author: Adam Batten

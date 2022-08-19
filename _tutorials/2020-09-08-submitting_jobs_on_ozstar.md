@@ -210,7 +210,7 @@ You can also neglect the `--user=yourusername` to view the entire job queue for 
 
 If you are using OzSTAR then the output of `squeue --user=yourusername` should look similar to the figure below. 
 
-!["An image of the output of squeue after using sbatch on my_slurm_job.sh"](/assets/images/slurm_squeue.png)
+!["An image of the output of squeue after using sbatch on my_slurm_job.sh"](/images/slurm_squeue.png)
 
 The columns of the output are as follows:
 

@@ -7,8 +7,8 @@ teaser: "A guide for installing Python for the first time."
 header:
     image: tutorials/anaconda_install/Anaconda_Logo.png
     background-color: "#262930"
-    caption: This is a caption for the header image with link
-    caption_url: https://unsplash.com/
+    caption: ' '
+    caption_url: ' '
 image:
     thumb:  tutorials/anaconda_install/Anaconda_Logo.png
     homepage: tutorials/anaconda_install/Anaconda_Logo.png 
