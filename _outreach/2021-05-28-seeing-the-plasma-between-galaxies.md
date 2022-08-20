@@ -5,8 +5,8 @@ subheadline: "Pod of Science"
 meta_teaser: "How do you see matter that doesn't give off light? Adam Batten is using FRBs to help him out. What are FRBs? Why is Australia a great place to study them? Tune in to find out!"
 teaser: "How do you see matter that doesn't give off light? Adam Batten is using FRBs to help him out. What are FRBs? Why is Australia a great place to study them? Tune in to find out!"
 header:
-    image: pod_of_science_banner.jpg
-    pattern: milky-way.jpg
+    title: ' '
+    image_fullwidth: pod_of_science_banner.jpg
 image:
     thumb:  pod-of-science.jpg
     homepage: pod-of-science.jpg
