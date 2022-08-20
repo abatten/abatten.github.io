@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: page
 title: "A 'How To' Guide To Simulating The Universe"
 subheadline: "Swinburne University of Technology"
 meta_teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2022 public lecture series."
