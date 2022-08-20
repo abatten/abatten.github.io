@@ -1,6 +1,6 @@
 ---
 layout: page-fullwidth
-title: "Intergalactic Space, fast radio bursts, and the hunt for the missing matter"
+title: "Intergalactic space, fast radio bursts, and the hunt for the missing matter"
 subheadline: "Swinburne University of Technology"
 meta_teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2021 public lecture series."
 teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2021 public lecture series."
