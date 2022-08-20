@@ -16,7 +16,7 @@ image:
 categories:
     - Science Resources 
 
-date: 2015-10-13
+post_date: 2015-10-13
 modify_date: 2022-05-14
 
 gallery:
