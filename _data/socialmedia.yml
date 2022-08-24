@@ -1,7 +1,9 @@
 - name: GitHub
   url: http://github.com/abatten
   class: icon-github
-  title: "Find me on github!"
+  title: "Find me on Github!"
+
+
 
     #- name: YouTube
     #  url: http://www.youtube.com/PhlowMedia
@@ -11,7 +13,17 @@
 - name: Twitter
   url: http://twitter.com/adamjbatten
   class: icon-twitter
-  title: "Follow me on Twitter"
+  title: "Follow me on Twitter!"
+
+- name: ADS
+  url: https://ui.adsabs.harvard.edu/search/q=docs(library%2FJVI0wKk5ThW2taKTMT2oEQ)&sort=date%20desc%2C%20bibcode%20desc&p_=0
+  class: icon-rocket
+  title: "See my publications on ADS!"
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/adamjbatten/
+  class: icon-linkedin
+  title: "Find me on LinkedIn!"
 
     #- name: Mixcloud
     #  url: http://www.mixcloud.com/phlow/
