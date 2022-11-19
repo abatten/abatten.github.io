@@ -14,6 +14,8 @@ Note: To save on file size, these talks have been experoted as PDFs. As a result
 
 
 ## Recent Invited Talks and Colloquiums
+- 2022-11-20: ASTRO 3D Student Retreat, Adelaide, Australia (**Invited Talk**)
+    - *"How to not make your PhD your entire life… and actually finish it!"*
 - 2021-07-30: Macquarie University, Sydney, Australia (**Invited Colloquium**)
     - *"The Intergalactic Medium through the lens of Fast Radio Bursts and Hydrodynamic Simulations"*
     - [Slides PDF](/documents/talks/2021-07-30-Macquarie.pdf){:.button.button--success.button--rounded.button--xs}
