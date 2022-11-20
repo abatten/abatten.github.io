@@ -12,8 +12,10 @@ permalink           : "/research/"
 
 My research broadly revolves around trying to understand the Universe. My work usually involves using large computer simulations or other forms of '*Big Data*'.
 I am *usually* a theorist and love working with cosmological simulations. However, I do occasionally dabble with observations and even human-based experiments.
+My current work involves using the Hubble Space Telescope to measure the expansion rate of the Universe.
 
-I am currently a Postdoctoral Research Fellow and Data Analyst at Swinburne University of Technology, working with Prof. Chris Fluke.
+I am currently a Postdoctoral researcher at Swinburne University of Technology, working with Prof. Jeremy Mould.
+I was previously a Postdoctoral Research Fellow and data analyst working with Prof. Chris Fluke.
 
 My PhD research revolved around studying the intergalactic medium and how its evolution can inform us about the history of galaxies.
 I used cosmological hydrodynamic simulations to determine how fast radio bursts can probe the effects of active galactic nuclei and the ionised gas in the intergalactic medium.
