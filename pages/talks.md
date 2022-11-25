@@ -14,9 +14,9 @@ Note: To save on file size, these talks have been exported as optimised PDFs. As
 
 
 ## Recent Invited Talks and Colloquiums
-- 2022-11-20: ASTRO 3D Student Retreat, Adelaide, Australia (**Invited Talk**)
+- 2022-11-20: ASTRO 3D Student Retreat, Adelaide, Australia (**Invited Talk/Workshop**)
     - *"How to not make your PhD your entire life… and actually finish it!"*
-    - [Slides PDF](/documents/talks/2022-11-20-ASTRO3D_Student_Retreat.pdf){:.button} [Slides PDF with Workshop Responces](/documents/talks/2022-11-20-ASTRO3D_Student_Retreat_Workshop_Responces.pdf){:.button}
+    - [Slides PDF](/documents/talks/2022-11-20-ASTRO3D_Student_Retreat.pdf){:.button} [Slides with workshop responses](/documents/talks/2022-11-20-ASTRO3D_Student_Retreat_Workshop.pdf){:.button}
 
 - 2021-07-30: Macquarie University, Sydney, Australia (**Invited Colloquium**)
     - *"The Intergalactic Medium through the lens of Fast Radio Bursts and Hydrodynamic Simulations"*
