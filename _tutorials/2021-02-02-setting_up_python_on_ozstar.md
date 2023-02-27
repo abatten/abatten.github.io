@@ -21,7 +21,7 @@ categories:
     - tutorial
 
 post_date: 2021-02-02
-modify_date: 2021-11-06
+modify_date: 2023-02-27
 
 permalink           : "/tutorials/setting_up_python_on_ozstar/"
 ---
@@ -44,9 +44,7 @@ This is a short guide on how to set up Python on [OzSTAR](https://supercomputing
 
 If you are unfamiliar with [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) before this guide, they may feel a little different, but will make using Python on OzSTAR significantly easier in the long run. 
 
-<mark>
 Note: This is primarily aimed at people that will be using OzSTAR, and may not be applicable in other circumstances. 
-</mark>
 
 ### This Tutorial Covers:
 - [Preparation](#preparation)
@@ -77,10 +75,8 @@ Loading modules or libraries that are required by Python packages is fine.
 
 You can ensure that all modules have been unloaded from your session use `module perge`.
 
-<mark>
 In case you are unfamiliar, OzSTAR uses modules to manage the software it has installed. If you want to use a module you first have to load it. To load a module use the following command: `module load <module_name>/<software_version>`.
 You can search for modules using `module spider <module_name>`. To view a list of all the modules you have loaded use `module ls`.
-</mark>
 
 ## Loading Anaconda
 For managing Python on OzSTAR I suggest using `anaconda3` and `conda` environments. 
@@ -95,9 +91,7 @@ module load anaconda3/5.0.1
 ```
 The reason for using `module purge` all loaded modules first is to make absolutely sure that no paths are being overridden by `anaconda3`. I highly recommend using your `.bashrc` or `.bash_profile` for this, such that you don't have to do it manually every time you login.
 
-<mark>
 The reason for using `anaconda3/5.0.1` rather than `anaconda3/5.1.0` (which is also available on OzSTAR), is because the latter version has a bug where OzSTAR will not correctly set the paths to Anaconda's commands (like `conda`; `activate`; `deactivate`). Instead, it attempts to use the ones from `anaconda3/5.0.1` whenever any environment besides the default is [activated](#activating-an-anaconda-environment). This means that it once an environment is [activated](#activating-an-anaconda-environment) using `anaconda3/5.1.0`, it becomes impossible to [deactivate](#deactivate-an-anaconda-environment) the environment again.
-</mark>
 
 
 <b>Example:</b>
@@ -112,9 +106,7 @@ module load git/2.16.0
 ```
 
 ## Using Conda environments
-<mark>
 TL;DR: Create custom environments using `conda create -n <env_name> python==<python_version>`, activate with `source activate <environment_name>` and deactivate with `source deactivate`.
-</mark>
 
 ### Why use a Conda Environment?
 The main purpose to using `conda` environments is to create an isolated environment for your project. This means you don't have to worry about if different projects you are working on require different versions of software.
@@ -142,6 +134,11 @@ conda create -n <environment_name> python==<python_version>
 This will create an environment with the name `<environment_name>` using Python version `<python_version>`. This environment will be stored in your `~/.conda/envs` directory. You can create multiple environments for the different versions of Python required. I personally have a `Python 3.8` environment for 99.9% of my work and `Python 2.7` environment to run software that hasn't been update to `Python 3` yet.
 
 If you don't know what to name your environment, I would suggest naming your environment after the Python version. i.e If you are going to be using `Python 3.8`, name the environment `py38`, or you are using `Python 2.7` name it `py27`.
+
+Example: To set up a Python 3.8 environment called 'py38' use the following:
+```
+conda create -n py38 python==3.8
+```
 
 ### Activate a Conda Environment
 After the environment has been made, it can be activated with `source activate <environment_name>` (or `. activate <environment_name>`, either one is fine). You will be able to see that your environment is activated because the `<environment_name>` will appear on the left hand side of your prompt as shown below.
@@ -172,9 +169,8 @@ Keep a note of the [issue with deactivating environments](#loading-anaconda) if 
 
 
 ## Issues with Home Directory Quota
-<mark>
+
 TL;DR: If you are running out of inode space in your home directory, you can move your `.conda` to Lustre with `mv /home/<username>/.conda /fred/oz<group_number>/<username>` and make a symbolic link with `ln -s /fred/oz<group_number>/<username>/.conda /home/<username>/.conda`
-</mark>
 
 The main downside with using this approach to use Python on OzSTAR is that `conda` environments produce a large number of small files.
 If you have many environments or large ones, it is possible that you will hit the file limit (aka inode limit) in your home directory (which is set to 100k).
