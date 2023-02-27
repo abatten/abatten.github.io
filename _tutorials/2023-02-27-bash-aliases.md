@@ -18,7 +18,7 @@ image:
 categories:
     - tutorial
 post_date: 2023-02-27
-modify_date: 2023-02-27
+modify_date: 2023-02-28
 
 permalink           : "/tutorials/useful_bash_aliases/"
 ---
@@ -100,6 +100,13 @@ to know how messy my desktop is. I just type `hidedesktop` in the terminal,
 and all of my icons disappear. (THe files are still there but they dont render
 the icon itself. If I want to bring them back I just type `showdesktop`.
 
+## Count the number of files in all sub directories
+```bash
+alias count='find . -type f | wc -l'           #  Count files
+```
+I use this whenever I need to know how many files there are in my current dirrectory. Note that this also includes hidden files, but doesn't include directories themselves.
+So if you have directory that contains two directories, one containing 2 files and another with 3 files, `count` will return 5. 
+
 ## Get IP Address and External IP Adress
 ```bash
 alias ip="ipconfig getifaddr en0"
@@ -127,6 +134,8 @@ alias -- -="cd -"                      # Switch to previous directory
 alias f="open -a Finder ./"            #  Open current directory in Finder
 
 alias restart="source ~/.bash_profile"         #  Quickly refresh shell
+
+alias count='find . -type f | wc -l'           #  Count files
 
 # Get IP Addresses
 alias ip="ipconfig getifaddr en0"
