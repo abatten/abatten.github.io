@@ -36,9 +36,9 @@ permalink           : "/tutorials/useful_bash_aliases/"
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 I have collected a few interesting bash aliases that I use in my day-to-day programming.
-This tutorial is a list of the ones that I have found most useful. I will note that a few
-of these aliases are MacOS specific, but I am sure you could find the Linux equivalent somewhere
-one the internet.
+This tutorial is a list of the ones that I have found most helpful. I will note that a few
+of these aliases are MacOS-specific, but I am sure you could find the Linux equivalent somewhere
+on the internet.
 
 I put all of these bash aliases in a `.bash_aliases` in my home directory and load them by including the following in my `.bashrc` file:
 ```bash
@@ -47,19 +47,19 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 ```
-This checks to see if the `.bash_aliases` file exists, and if it does, load all of the aliases. 
+This checks to see if the `.bash_aliases` file exists, and if it does, load all of the aliases.
 
 ## Additional `ls` options.
 ```bash
 alias ls="ls -h"                       #  Use human readable filesizes
 alias la="ls -hA"                      #  Show hidden files easier
-alias lla="ls -hlA"                    #  Show long hidden files
+alias lla="ls -hlA"                    #  Show long-hidden files
 ```
-I use `ls -lA` to show to list the details of all the hidden files so often
-that I found it useful to just have it as an alias. 
+I use `ls -lA` to list the details of all the hidden files so often
+that I found it necessary to have an alias.
 
-I additionally always want to use `-h` to make all the file sizes in human readable format.
-It just makes it much easier to see how many kB/MB/GB all my files are.
+I additionally always want to use `-h` to make all the file sizes in a human-readable format.
+It makes it much easier to see the file size of everything in the directory.
 
 ## Faster backwards `cd`.
 ```bash
@@ -69,54 +69,52 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
 ```
-To go backwards from a directory (`cd ..`) I can just use `..`. Or I use `...` to go
-backwards two directories, etc
+To go backwards from a directory (`cd ..`) I can use `..`. Or I use `...` to go
+backward two directories, etc
 
-Also, I can use `-` to switch between the last two directoties that I was in.
-Useful when I need to swap between two entirely different directories quickly a few times.
+Also, I can use `-` to switch between the last two directories I was in.
+I find `-` helpful when I need to swap between two entirely different directories quickly a few times.
 
 ## Open the current terminal directory in Finder.
 ```bash
 alias f="open -a Finder ./"
 ```
-Quite often I want to open whatever directory I am in with Finder. This is usually
-so I can look at all of the thumbnails of images quickly reather than opening files from
-the terminal. So by just typing `f` I open up Finder 'here'.
+I often want to open whatever directory I am in with Finder to look at all the file thumbnails. 
+So by just typing `f`, I open up Finder 'here' rather than having to open the files themselves in the terminal.
 
-## Refresh bash session in same directory.
+## Quickly refresh Bash session.
 ```bash
 alias restart="source ~/.bash_profile"         #  Quickly refresh shell
 ```
-I use `restart` to quickly refresh the bash shell without having to close then open
-a new terminal. I usually use this after I've edited my `.bashrc`, `.bash_profile` or `.bash_aliases` file.
+I use `restart` to quickly refresh the bash shell without having to close and then open
+a new terminal. I usually use this after I've edited my `.bashrc`, `.bash_profile` or `.bash_aliases` files.
 
 ## Hide/Show all Desktop Icons.
 ```bash
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false; killall Finder;"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; killall Finder;"
 ```
-These are useful for when I have a presentation and I don't want everyone
-to know how messy my desktop is. I just type `hidedesktop` in the terminal,
-and all of my icons disappear. (THe files are still there but they dont render
-the icon itself. If I want to bring them back I just type `showdesktop`.
+These are useful when I have a presentation, and I don't want everyone
+to know how messy my desktop is. I type `hidedesktop` in the terminal,
+and all my icons disappear (the files are still there, but the icon isn't displayed). If I want to return them, I type `showdesktop`.
 
-## Count the number of files in all sub directories.
+## Count the number of files in all subdirectories.
 ```bash
 alias count='find . -type f | wc -l'           #  Count files
 ```
-I use this whenever I need to know how many files there are in my current dirrectory. Note that this also includes hidden files, but doesn't include directories themselves.
-So if you have directory that contains two directories, one containing 2 files and another with 3 files, `count` will return 5. 
+I use this whenever I need to know how many files there are in my current directory. Note that this also includes hidden files but doesn't include directories.
+So if you have a directory that contains two subdirectories, one containing 2 files and another with 3 files, `count` will return 5.
 
 ## Get IP Address and External IP Address.
 ```bash
 alias ip="ipconfig getifaddr en0"
 alias ipext="curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*'"
 ```
-Sometimes I need to find my current IP address, and instead of googling "What is my IP address?" every time, 
+Sometimes I need to find my current IP address, and instead of googling "What is my IP address?" every time,
 I use `ip` and `ipext` to find my internal and external IP addresses.
 
 Your "internal IP address" is the IP address you use on your local, internal network (i.e. LAN).
-Your "external IP address" is the IP address you use when communicating to other machines on the internet. 
+Your "external IP address" is the IP address you use when communicating with other machines on the internet.
 This is assigned by your internet service provider.
 
 ### All of the aliases from this tutorial.
@@ -128,7 +126,7 @@ alias lla="ls -hlA"                    #  Show long hidden files
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias .....="cd ../../../.."     
+alias .....="cd ../../../.."
 alias -- -="cd -"                      # Switch to previous directory
 
 alias f="open -a Finder ./"            #  Open current directory in Finder
@@ -146,4 +144,3 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false; ki
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true; killall Finder;"
 
 ```
-
