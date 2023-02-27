@@ -117,7 +117,7 @@ Your "internal IP address" is the IP address you use on your local, internal net
 Your "external IP address" is the IP address you use when communicating with other machines on the internet.
 This is assigned by your internet service provider.
 
-### All of the aliases from this tutorial.
+## All of the aliases from this tutorial.
 ```bash
 alias ls="ls -h"                       #  Use human readable filesizes
 alias la="ls -hA"                      #  Show hidden files easier
