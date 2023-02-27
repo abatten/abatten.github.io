@@ -83,7 +83,7 @@ Quite often I want to open whatever directory I am in with Finder. This is usual
 so I can look at all of the thumbnails of images quickly reather than opening files from
 the terminal. So by just typing `f` I open up Finder 'here'.
 
-## Refresh bash session in same directory
+## Refresh bash session in same directory.
 ```bash
 alias restart="source ~/.bash_profile"         #  Quickly refresh shell
 ```
@@ -100,14 +100,14 @@ to know how messy my desktop is. I just type `hidedesktop` in the terminal,
 and all of my icons disappear. (THe files are still there but they dont render
 the icon itself. If I want to bring them back I just type `showdesktop`.
 
-## Count the number of files in all sub directories
+## Count the number of files in all sub directories.
 ```bash
 alias count='find . -type f | wc -l'           #  Count files
 ```
 I use this whenever I need to know how many files there are in my current dirrectory. Note that this also includes hidden files, but doesn't include directories themselves.
 So if you have directory that contains two directories, one containing 2 files and another with 3 files, `count` will return 5. 
 
-## Get IP Address and External IP Adress
+## Get IP Address and External IP Address.
 ```bash
 alias ip="ipconfig getifaddr en0"
 alias ipext="curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*'"
@@ -119,7 +119,7 @@ Your "internal IP address" is the IP address you use on your local, internal net
 Your "external IP address" is the IP address you use when communicating to other machines on the internet. 
 This is assigned by your internet service provider.
 
-### All of the aliases from this tutorial
+### All of the aliases from this tutorial.
 ```bash
 alias ls="ls -h"                       #  Use human readable filesizes
 alias la="ls -hA"                      #  Show hidden files easier
