@@ -179,6 +179,7 @@ pre {
     padding: 5px;
     background-color: $code-background-color;
     border-radius: $global-radius;
+
 }
 pre code {
     padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
@@ -187,9 +188,48 @@ pre code {
 
 code {
     font-size: rem-calc(14);
-    line-height: 1.5;
+    line-height: 1.0;
 }
 
+
+.highlight pre {
+  border: none;
+  background: none;
+  margin: 0;
+}
+.highlight > pre {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 1.5em, rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.03) 3em);
+  background-size: auto 3em;
+  background-position-y: 0.625rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-left: 0.4375rem solid #444;
+}
+.highlight > pre:not([class~="highlight"]) { /* code block with line number */
+  padding: 0;
+}
+.highlight table, .highlight tr, .highlight td { /* to be removed after fixing table styles */
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.highlight pre.lineno {
+  color: rgba(0,0,0,0.3);
+  border-radius: 0;
+  border-right: 2px solid #444;
+}
+
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.lineno {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.lineno::selection, .lineno::-moz-selection {
+  background: none;
+}
 
 
 /* Lists
