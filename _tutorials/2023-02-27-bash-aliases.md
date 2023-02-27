@@ -36,7 +36,9 @@ permalink           : "/tutorials/useful_bash_aliases/"
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 I have collected a few interesting bash aliases that I use in my day-to-day programming.
-This tutorial is a list of the ones that I have found most useful.
+This tutorial is a list of the ones that I have found most useful. I will note that a few
+of these aliases are MacOS specific, but I am sure you could find the Linux equivalent somewhere
+one the internet.
 
 I put all of these bash aliases in a `.bash_aliases` in my home directory and load them by including the following in my `.bashrc` file:
 ```bash
