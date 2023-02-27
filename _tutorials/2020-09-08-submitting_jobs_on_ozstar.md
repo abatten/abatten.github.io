@@ -7,13 +7,13 @@ teaser: "A beginners guide to writing and submitting Slurm jobs on the OzSTAR su
 header:
     image: OzStar_logo.png
     background-color: "#262930"
-    caption: This is a caption for the header image with link
-    caption_url: https://unsplash.com/
+    caption: ' '
+    caption_url: ' '
 image:
     thumb:  OzStar_logo.png
     homepage: OzStar_logo.png
-    caption: Image by Antonio
-    caption_url: "http://www.aisleone.net/"
+    caption: ' '
+    caption_url: ' '
 categories:
     - tutorial
 
