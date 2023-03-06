@@ -6,14 +6,16 @@
 #
 layout: frontpage
 header:
-  title: ' ' 
+  title: 'Dr. Adam Batten' 
   image_fullwidth: milky-way.jpg
+
+
 
 widget1:
   title: "Recent Publication"
-  url: 'https://arxiv.org/abs/2109.13472'
+  url: 'https://ui.adsabs.harvard.edu/abs/2022MNRAS.512L..49B/abstract'
   image: CDF_distance.png
-  text: 'Check out my latest research paper titled: <i>Fast radio bursts as probes of feedback from active galactic nuclei</i>'
+  text: 'Check out my latest research paper titled: <i>Fast radio bursts as probes of feedback from active galactic nuclei</i>. In this I show how many localised FRBs would be needed to constrain AGN feedback.'
 
 widget2:
   title: "Fruitbat"
@@ -39,8 +41,9 @@ widget3:
 #
 #callforaction:
 #  url: https://tinyletter.com/feeling-responsive
-#  text: Inform me about new updates and features ›
+#  text: See my latest tutorial: "Some useful Bash aliases"
 #  style: alert
+
 permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
@@ -49,18 +52,20 @@ permalink: /index.html
 homepage: true
 ---
 
-# Dr. Adam Batten
-{: style="text-align: center;"}
+<!---# Dr. Adam Batten
+{: style="text-align: center;"}--->
 
 ## Hi! I'm Adam, an astronomer from Australia. 
 {: style="text-align: center;"}
 
-### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies. 
+<!---### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies.---> 
+
+### I measure the Universe's expansion and study how AI and humans work in teams.
 {: style="text-align: center;"}
 
 
 <div style="text-align: center;">
-<img class="t60" src="{{ site.urlimg }}avatar_2.jpg" alt="A portrait photo of Adam Batten" height="30%" width="30%" style="border-radius: 50%">
+<img class="t60" src="{{ site.urlimg }}avatar_2.jpg" alt="A portrait photo of Adam Batten" height="40%" width="40%" style="border-radius: 50%">
 </div>
 
 #### Postdoctoral Research Associate - Swinburne University of Techology
@@ -72,3 +77,4 @@ homepage: true
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div>-->
+
