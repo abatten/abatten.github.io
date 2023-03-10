@@ -26,13 +26,13 @@ You can see more about my research on my [research page](/research) and my list 
 
 If you want to see more fun, non-research based information about me you can find it [here](/fun).
 
-### Education Information
+### Previous Positions
 In May 2023, I will start a new part-time position as a Postdoctoral Research Fellow in Space Domain Awareness at Swinburne.
 
 #### Postdoctoral Researcher (2022-Present)
-In January 2023, I rejoined as a part-time Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Chris Fluke.
+In January 2023, I rejoined as a part-time (0.6 FTE) Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Chris Fluke.
 
-Since October 2022, I have been employed part-time at Swinburne with Prof. Jeremy Mould, measuring the Hubble constant (H0) using the Tip of the Red Giant Branch Stars.
+Since October 2022, I have been employed part-time (0.4 FTE) at Swinburne with Prof. Jeremy Mould, measuring the Hubble constant (H0) using the Tip of the Red Giant Branch Stars.
 
 #### ADACS Internship (2022)
 From July to the beginning of October 2022, I was a research software engineer intern at Astronomy Data and Computing Services (ADACS) in Melbourne.
@@ -41,6 +41,7 @@ From July to the beginning of October 2022, I was a research software engineer i
 From April to June 2022, I was a Postdoctoral researcher and data analyst in the Human-Machine Laboratory at Swinburne with Prof. Chris Fluke. 
 As part of teh team I helped run experimental conditions. I led the analysis of heart rate, electrocardiogram monitors and NASA TLX scores. 
 
+### Education Information
 
 #### Doctor of Philosophy (2018-2022)
 I completed my Doctor of Philosophy (PhD) in astrophysics at Swinburne University of Technology in the [Centre for Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) in 2022.
