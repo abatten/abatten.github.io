@@ -1,7 +1,7 @@
 ---
 layout              : page
 show_meta           : false
-title               : "About"
+title               : "About Me"
 subheadline         : ""
 teaser              : ""
 header:
@@ -22,7 +22,9 @@ The rest of the time, I am trying to resolve the Hubble tension by measuring the
 My other primary interests include using simulations to study the composition and evolution of the intergalactic medium through cosmic time, the common envelope phase of giant stars, and fast radio bursts. 
 I am an associate researcher with ARC Centre of Excellence for All-Sky Astrophysics in 3 Dimensions ([ASTRO 3D](https://astro3d.org.au/)).
 
-You can see more about my research on my [research page](research.html) and my list of publications on <a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2FJVI0wKk5ThW2taKTMT2oEQ)&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a>.
+You can see more about my research on my [research page](/research) and my list of publications on <a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2FJVI0wKk5ThW2taKTMT2oEQ)&sort=date%20desc%2C%20bibcode%20desc&p_=0">ADS</a>.
+
+If you want to see more fun, non-research based information about me you can find it [here](/fun).
 
 ### Education Information
 In May 2023, I will start a new part-time position as a Postdoctoral Research Fellow in Space Domain Awareness at Swinburne.
