@@ -56,6 +56,7 @@ Note: To save on file size, these talks have been exported as optimised PDFs. As
 # Public Talks
 - 2023-03-30: Swinburne University of Technology, Melbourne (*CAS Public Lecture Series*)
     - *"The Hubble Tension: How are we trying to solve one of the biggest crises in Astronomy?"*
+    - [Slides PDF](/documents/talks/2023-03-30-Hubble_Tension_CAS_Public_Talk.pdf)
 
 - 2022-05-27: Swinburne University of Technology, Melbourne (*CAS Public Lecture Series*)
     - *"A How To Guide To Simulating the Universe"*
