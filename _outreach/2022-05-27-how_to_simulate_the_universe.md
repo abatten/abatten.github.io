@@ -5,20 +5,20 @@ subheadline: "Swinburne University of Technology"
 meta_teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2022 public lecture series."
 teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2022 public lecture series."
 header:
-    image: how_to_simulate_the_universe.png
+    image: outreach_thumbnails/how_to_simulate_the_universe_optimised.jpg
     background-color: "#262930"
     caption: 
     caption_url:
 image:
-    thumb:  how_to_simulate_the_universe.png
-    homepage: how_to_simulate_the_universe.png
+    thumb:  outreach_thumbnails/how_to_simulate_the_universe_optimised.jpg
+    homepage: outreach_thumbnails/how_to_simulate_the_universe_optimised.jpg
     caption:
     caption_url:
 categories:
     - Public Talk
 
 post_date: 2022-05-27
-modify_date: 2022-08-20
+modify_date: 2023-03-30
 
 permalink           : "/outreach/how_to_simulate_the_universe/"
 ---
