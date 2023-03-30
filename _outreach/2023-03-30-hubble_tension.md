@@ -5,12 +5,12 @@ subheadline: "Swinburne University of Technology"
 meta_teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2023 public lecture series."
 teaser: "This is a lecture that I gave as part of the Centre of Astrophysics and Supercomputing 2023 public lecture series."
 header:
-    image: outreach_thumbnails/hubble_tension_public_talk.jpg
+    image: outreach_thumbnails/hubble_tension_public_talk_optimised.jpg 
     background-color: "#262930"
     caption: 
     caption_url:
 image:
-    thumb:  outreach_thumbnails/hubble_tension_public_talk_optimised.jpg
+    thumb: outreach_thumbnails/hubble_tension_public_talk_optimised.jpg
     homepage: outreach_thumbnails/hubble_tension_public_talk_optimised.jpg
     caption:
     caption_url:
