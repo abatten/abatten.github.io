@@ -10,17 +10,23 @@ header:
 permalink           : "/outreach/all_events/"
 ---
 
+## 2023
+2023-05-09: VSSEC Work Experience Day (*Talk/Presentation*)
+:    I spoke to 8 year 10 students doing work experience with VSSEC about the cosmic distance ladder.
+:    [The slides can be found here](/talks/)
+
+2023-03-30 Swinburne University of Technology, Melbourne (*CAS Public Lecture Series*)
+:    [Public Talk: *"The Hubble Tension: What are we doing about one of the biggest crises in astronomy?*](/outreach/the_hubble_tension/)
 
 ## 2022
 2022-08-19: Ballarat Grammer School, Ballarat 
-:    I spoke with about 70 prep students (5-6 year olds) about the Sun and if it was alive and answered all their questions.
+:    I spoke with about 70 prep students (5-6 year olds) about the Sun and if it was alive and answered their questions about the sun and space.
 
 2022-05-27: Swinburne University of Technology, Melbourne (*CAS Public Lecture Series*) 
 :    [Public Talk: *"A How To Guide To Simulating the Universe"*](/outreach/how_to_simulate_the_universe/)
 
 2022-04-06: ABC Radio Sydney, Afternoons with James O'Loghlin, (*Live Radio*)
 :    Talked about Hubble observations of a new planet that challenges our model of planet formation.
-
 
 2022-03-29: Swinburne University of Technology, Melbourne (*AstroTour*)
 :    Hawthorn Joey Scouts
