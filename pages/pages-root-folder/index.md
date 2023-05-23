@@ -59,8 +59,8 @@ homepage: true
 {: style="text-align: center;"}
 
 <!---### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies.---> 
-
-### I measure the Universe's expansion and study how AI and humans work in teams.
+<!---### I measure the Universe's expansion and study how AI and humans work in teams.-->
+### I measure the Universe's expansion and track satellites orbiting Earth.
 {: style="text-align: center;"}
 
 

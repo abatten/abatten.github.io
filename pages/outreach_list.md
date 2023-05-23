@@ -11,6 +11,9 @@ permalink           : "/outreach/all_events/"
 ---
 
 ## 2023
+2023-05-19 Swinbourne University of Technology, Melbourne (*Astrotour*)
+:    Indigenous School Group
+
 2023-05-09: VSSEC Work Experience Day (*Talk/Presentation*)
 :    I spoke to 8 year 10 students doing work experience with VSSEC about the cosmic distance ladder.
 :    [The slides can be found here](/talks/)

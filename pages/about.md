@@ -16,7 +16,7 @@ permalink           : "/about/"
 
 I am currently working in a dual role as a Postdoctoral researcher in the [Centre for Astrophysics and Supercomputing](https://astronomy.swin.edu.au/) at the Swinburne University of Technology.
 
-In my working week, about 60% of the time, you can find me working in the Human-Machine Laboratory investigating the role of AI as a team member in decision-making environments.
+In my working week, about 60% of the time, you can find me working in the Space Domain Awareness Laboratory tracking satellites around Earth and determining what to do if we *lose* one.
 The rest of the time, I am trying to resolve the Hubble tension by measuring the Hubble constant with Tip of the Red Giant Branch Stars (TRGB Stars).
 
 My other primary interests include using simulations to study the composition and evolution of the intergalactic medium through cosmic time, the common envelope phase of giant stars, and fast radio bursts. 
@@ -26,20 +26,29 @@ You can see more about my research on my [research page](/research) and my list 
 
 If you want to see more fun, non-research based information about me you can find it [here](/fun).
 
-### Previous Positions
-In May 2023, I will start a new part-time position as a Postdoctoral Research Fellow in Space Domain Awareness at Swinburne.
+### Current Position
+#### Postdoctoral Researcher in Space Domain Awareness (Since May 2023)
+In May 2023, I join the Space Domain Awareness Laboratory at Swinburne University of Technology with Prof. Chris Fluke.
 
-#### Postdoctoral Researcher (2022-Present)
-In January 2023, I rejoined as a part-time (0.6 FTE) Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Chris Fluke.
-
+#### Postdoctoral Researcher in Extragalactic Astrophysics (Since October 2022)
 Since October 2022, I have been employed part-time (0.4 FTE) at Swinburne with Prof. Jeremy Mould, measuring the Hubble constant (H0) using the Tip of the Red Giant Branch Stars.
+
+
+### Previous Positions
+
+#### Postdoctoral Researcher and Data Analyst (2023)
+In January 2023, I rejoined as a part-time (0.6 FTE) Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Chris Fluke.
+In this project we were reaching how effectively humans and AI work together in teams, particularly in decision-making environments.
+In this position I ran experimental trials that involved collectioning biometric data from participants. 
+I led the analysis of participant task performance and eye tracking data from pupil labs devices. 
 
 #### ADACS Internship (2022)
 From July to the beginning of October 2022, I was a research software engineer intern at Astronomy Data and Computing Services (ADACS) in Melbourne.
 
 #### Postdoctoral Researcher (2022)
 From April to June 2022, I was a Postdoctoral researcher and data analyst in the Human-Machine Laboratory at Swinburne with Prof. Chris Fluke. 
-As part of teh team I helped run experimental conditions. I led the analysis of heart rate, electrocardiogram monitors and NASA TLX scores. 
+I ran experimental trials and conditions which involved connecting people to various biometric sensors, including eye-tracking glasses, ECG, and GSR monitors.
+I led the analysis of the ECG-heart rate data and the participant work load perception (NASA TLX) scores. 
 
 ### Education Information
 

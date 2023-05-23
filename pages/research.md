@@ -13,7 +13,7 @@ permalink           : "/research/"
 I am an Astronomer, so my research broadly revolves around trying to understand the Universe. 
 My work typically involves using large computer simulations or other forms of '*Big Data*'.
 I am *usually* a theorist and love working with cosmological simulations. However, I do occasionally dabble with observations and even human-based experiments.
-My current research involves using the Hubble Space Telescope to measure the expansion rate of the Universe and investigating how Artificial Intelligences (AI) work in teams with humans.
+My current research involves using the Hubble Space Telescope to measure the expansion rate of the Universe and doing active space domain awareness to track satellites and determine what to do when we lose track of one.
 
 I am currently a Postdoctoral researcher at Swinburne University of Technology, working in a dual role with Prof. Jeremy Mould and Prof. Chris Fluke.
 
