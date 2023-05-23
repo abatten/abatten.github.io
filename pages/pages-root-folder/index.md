@@ -55,7 +55,7 @@ homepage: true
 <!---# Dr. Adam Batten
 {: style="text-align: center;"}--->
 
-## Hi! I'm Adam, an astronomer from Australia. 
+## Hi! I'm Adam, an astronomer and science communicator from Australia. 
 {: style="text-align: center;"}
 
 <!---### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies.---> 
