@@ -74,6 +74,10 @@ Note: To save on file size, these talks have been exported as optimised PDFs. As
     - [Slides PDF](/documents/talks/2017-05-27-MQ_Open_Night_Talk.pdf){:.button}
 
 # Additional Talks
+- 2023-09-13: Swinburne University of Technology, Melbourne (*Swinburne Work Experience Program*)
+    - *'The Cosmic Distance Ladder'*
+    - [Slides PDF](2023-09-13-Cosmic Distance_Ladder_Work_Experience.pdf){:.button}
+
 - 2023-05-09: Swinburne University of Technology, Melbourne (*VSSEC Work Experience Day*)
     - *'The Cosmic Distance Ladder'*
     - [Slides PDF](2023-05-09-Cosmic_Distance_Ladder_VSSEC.pdf){:.button}

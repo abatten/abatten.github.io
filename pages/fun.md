@@ -44,7 +44,7 @@ I enjoy reading books. About 50% of the books I read are fantasy, but I generall
 ## Travel
 As of 2022, I have visited every state in Australia plus the two main territories (Australian Capital Territory and Northern Territory).
 
-I have visited 8 countries:
+I have visited 9 countries:
 - Australia
 - New Zealand
 - United States
@@ -53,3 +53,4 @@ I have visited 8 countries:
 - Vanuatu
 - New Caledonia
 - Colombia
+- Germany
