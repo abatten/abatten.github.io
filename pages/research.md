@@ -28,6 +28,8 @@ My recent scientific and public talks list is on my [talks](/talks) page.
 ## Research Interests
 
 ### Cosmic Expansion and Hubble Tension
+#### I am using the Hubble Space telescope and the Tip of the Red Giant Branch Stars to measure the expansion rate of the Universe.
+
 !["A visualisation of the cosmic distance ladder to measure H0 from supernovae."](/images/research/distance_ladder.png)
 <sup>Image Credit: NASA, ESA and A. Feild (STScI)</sup>
 
@@ -36,8 +38,8 @@ The present-day Hubble parameter (H0) quatifies how fast the Universe is expandi
 However, there is a discrepency between measurements of H0 that are made locally (using the cosmic distance ladder), and the value of H0 infered from the cosmic microwave background (CMB).
 These values are 73.30 ± 1.04 km s-1 Mpc-1 (local measurements using Cepheid calibrated Supernovae) and 67.8 +/- 0.9 (CMB measured by Planck), a 5 sigma difference. 
 As H0 is a crucial parameter in the standard model of cosmology, it is necessary to improve the significance of these results.
-In my research I am using the Hubble Space telescope and the tip of the red giant branch (TRGB) distance indicator as an
-alternative to the Cepheid period luminosity (Leavitt) relation.
+In my research I am using the Hubble Space telescope and the tip of the red giant branch (TRGB) as an alternative distance indicator to the Cepheid period luminosity (Leavitt) relation.
+
 
 
 ### AI as a Team Member
@@ -48,6 +50,8 @@ In this project I am investigating the role of an AI team-member as a monitors f
 
 
 ### The Intergalactic Medium
+#### I measured the expected electron column density distribution in simulations to predict where fast radio bursts intersect filaments of the intergalactic medium (Batten et al. 2021).
+
 !["A visualisation of the filaments of the intergalactic medium and cosmic web from the EAGLE simulations."](/images/eagle_igm.jpg)
 <sup>Image Credit: The EAGLE Project</sup>
 
@@ -64,6 +68,8 @@ The high-temperatures and low-densities make observations in the optical and UV 
 In my PhD, I looked at using fast radio bursts to probe the intergalactic medium and galaxy evolution. In particular, I determined that it is possible to use fast radio bursts to constrain feedback from active galactic nuclei.
 
 ### Fast Radio Bursts
+#### I showed that with enough fast radio bursts we can constrain feedback the active galactic nuclei (Batten et al. 2022).
+
 !["An artists interpretation of an FRB being detected at the Molonglo Radio Telescope."](/images/frbs.jpg)
 <sup>Image Credit: James Josephides / Swinburne University of Technology.</sup>
 
@@ -74,9 +80,9 @@ Due to the extragalactic nature of FRBs, their dispersion measure makes them an 
 
 ---
 ## Publications
-My list of publications are also avaliable on <a href="https://ui.adsabs.harvard.edu/public-libraries/JVI0wKk5ThW2taKTMT2oEQ">ADS</a>, via my <a href="https://orcid.org/0000-0001-7599-6488">ORCID page</a> and <a href="https://scholar.google.com/citations?user=aRUJW5UAAAAJ&hl=en">google scholar</a>.
+My list of my publications are also avaliable on <a href="https://ui.adsabs.harvard.edu/public-libraries/JVI0wKk5ThW2taKTMT2oEQ">ADS</a>, via my <a href="https://orcid.org/0000-0001-7599-6488">ORCID page</a> and <a href="https://scholar.google.com/citations?user=aRUJW5UAAAAJ&hl=en">google scholar</a>.
 
-
+#### First Author Papers
 **Batten, A. J.**, et al., "Fast radio bursts as probes of feedback from active galactic nuclei", *Monthly Notices of the Royal Astronomical Society: Letters*, vol. 512, iss. 1, May 2022, Pages L49-L53, <a href="https://doi.org/10.1093/mnrasl/slac020">https://doi.org/10.1093/mnrasl/slac020</a>
 
 **Batten, A. J.**, et al., "The cosmic dispersion measure in the EAGLE simulations", *Monthly Notices of the Royal Astronomical Society*, vol. 505, iss. 4, August 2021, Pages 5356–5369, <a href="https://doi.org/10.1093/mnras/stab1528">https://doi.org/10.1093/mnras/stab1528</a>
