@@ -28,7 +28,8 @@ If you want to see more fun, non-research based information about me you can fin
 
 ### Current Position
 #### Postdoctoral Researcher in Space Domain Awareness (Since May 2023)
-In May 2023, I join the Space Domain Awareness Laboratory at Swinburne University of Technology with Prof. Chris Fluke.
+In May 2023, I joined the Space Domain Awareness Laboratory at Swinburne University of Technology with Prof. Christopher Fluke. 
+In this position, I have developed novel data visualisations for a space domain awareness demonstrator to determine the origins of a satellite that had either moved into an unexpected orbit or to locate its new location after a non-detection at its expected position. 
 
 #### Postdoctoral Researcher in Extragalactic Astrophysics (Since October 2022)
 Since October 2022, I have been employed part-time (0.4 FTE) at Swinburne with Prof. Jeremy Mould, measuring the Hubble constant (H0) using the Tip of the Red Giant Branch Stars.
@@ -37,7 +38,7 @@ Since October 2022, I have been employed part-time (0.4 FTE) at Swinburne with P
 ### Previous Positions
 
 #### Postdoctoral Researcher and Data Analyst (2023)
-In January 2023, I rejoined as a part-time (0.6 FTE) Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Chris Fluke.
+In January 2023, I rejoined as a part-time (0.6 FTE) Postdoctoral researcher and data analyst in the Human-Machine Laboratory with Prof. Christopher Fluke.
 In this project we were reaching how effectively humans and AI work together in teams, particularly in decision-making environments.
 In this position I ran experimental trials that involved collectioning biometric data from participants. 
 I led the analysis of participant task performance and eye tracking data from pupil labs devices. 
@@ -59,11 +60,11 @@ In my PhD, I used large cosmological simulations and fast radio bursts to probe 
 Thesis title: *Fast radio bursts as probes of the intergalactic medium and galaxy evolution*
 
 #### Masters of Research (2017-2018)
-I completed my Master of Research (MRes) at Macquarie University in November 2017.
+I completed my Master of Research (MRES) at Macquarie University in November 2018.
 For my Master's thesis, I studied and ran simulations of the common envelope phase of giant stars.
-In particular, I was interested in how the dynamics of the common envelope change in a system that contains *three* bodies as opposed to the traditional two. My MRes supervisor was Prof. Orsola de Marco.
+In particular, I was interested in how the dynamics of the common envelope change in a system that contains *three* bodies as opposed to the traditional two. My MRES supervisor was Prof. Orsola de Marco.
 
-This Title: *Too Close; Yet Too Far: The Common Envelope Interaction of Triple Systems*
+Thesis Title: *Too Close; Yet Too Far: The Common Envelope Interaction of Triple Systems*
 
 #### Bachelor of Advanced Science (2013-2015)
 I completed my undergraduate degree (BAdvSci) at Macquarie University in Sydney, AUS, in 2015.
