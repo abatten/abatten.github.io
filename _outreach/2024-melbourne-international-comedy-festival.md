@@ -7,8 +7,8 @@ teaser: "On Friday, 19th of April 2024, I was part of a comedy science show at t
 header:
     title: ' '
 image:
-    thumb:  outreach/MICF/comedy-talk.JPG
-    homepage: outreach/MICF/comedy-talk.JPG
+    thumb:  outreach/MICF/comedy-talk-square.jpeg
+    homepage: outreach/MICF/comedy-talk-square.jpeg
     caption: 
     caption_url:
 tags:

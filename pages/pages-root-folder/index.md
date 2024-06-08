@@ -10,24 +10,24 @@ header:
   image_fullwidth: milky-way.jpg
 
 
-
 widget1:
-  title: "Recent Publication"
-  url: 'https://ui.adsabs.harvard.edu/abs/2022MNRAS.512L..49B/abstract'
-  image: CDF_distance.png
-  text: 'Check out my latest research paper titled: <i>Fast radio bursts as probes of feedback from active galactic nuclei</i>. In this I show how many localised FRBs would be needed to constrain AGN feedback.'
-
-widget2:
-  title: "Fruitbat"
-  url: 'https://github.com/abatten/fruitbat'
-  image: fruitbat_badge1.png
-  text: I am the lead developer on <i>Fruitbat</i>. A Python package for estimating redshifts for Fast Radio bursts.
-
-widget3:
-  title: "Science Talks: Recordings & Slides"
+  title: "Slides and recordings for my science/outreach talks"
   url: '/talks/'
   image: adam_asa_2021.jpeg
   text: 'See recordings and slides from my previous conference and invited talks'
+
+widget2:
+  title: "Recent outreach event: Melbourne International Comedy Festival"
+  url: '/outreach/2024-melbourne-international-comedy-festival/'
+  image: '/outreach/MICF/comedy-talk-square.jpeg'
+  text: 'Check out my latest outreach talk that I performed at the Melbourne International Comedy Festival.'
+
+widget3:
+  title: "Fruitbat"
+  url: 'https://github.com/abatten/fruitbat'
+  image: fruitbat_badge1.png
+  text: 'I am the lead developer on <i>Fruitbat</i>. A Python package for estimating redshifts for Fast Radio bursts.'
+
 
 #
 # Use the call for action to show a button on the frontpage
@@ -55,20 +55,20 @@ homepage: true
 <!---# Dr. Adam Batten
 {: style="text-align: center;"}--->
 
-## Hi! I'm Adam, an astronomer and science communicator from Australia. 
+## I'm Adam, an Australian astronomer and science communicator. 
 {: style="text-align: center;"}
 
+
+
+<div style="text-align: center;">
+<img class="t60" src="{{ site.urlimg }}Adam_Avatar_3.jpeg" alt="A portrait photo of Adam Batten" height="40%" width="40%" style="border-radius: 50%">
+</div>
 <!---### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies.---> 
 <!---### I measure the Universe's expansion and study how AI and humans work in teams.-->
 ### I measure the Universe's expansion and track satellites orbiting Earth.
 {: style="text-align: center;"}
 
-
-<div style="text-align: center;">
-<img class="t60" src="{{ site.urlimg }}avatar_2.jpg" alt="A portrait photo of Adam Batten" height="40%" width="40%" style="border-radius: 50%">
-</div>
-
-#### Postdoctoral Research Associate - Swinburne University of Techology
+#### Currently a researcher a Swinburne University of Techology
 {: style="text-align: center;"}
 
 <!---<div id="videoModal" class="reveal-modal large" data-reveal="">
