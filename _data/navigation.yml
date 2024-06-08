@@ -35,7 +35,11 @@
 - title: Media & Outreach
   url: "/outreach/"
   side: left
-
+  dropdown:
+    - title: "Selected Outreach & Media Articles"
+      url: "/outreach/" 
+    - title: "All Outreach & Media List"
+      url: "/outreach/all_events/"
 
 - title: Contact
   url: "/contact/"
