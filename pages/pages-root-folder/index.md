@@ -65,10 +65,10 @@ homepage: true
 </div>
 <!---### I study the intergalactic medium, the hot, tenuous material that fills the space between galaxies.---> 
 <!---### I measure the Universe's expansion and study how AI and humans work in teams.-->
-### I measure the Universe's expansion and track satellites orbiting Earth.
+### I measure the Universe's expansion, track satellites around Earth and simulate the magnetic fields of the brain.
 {: style="text-align: center;"}
 
-#### Currently a researcher a Swinburne University of Techology
+#### Currently a Neuroimaging Informatics Fellow at Swinburne Neuroimaging
 {: style="text-align: center;"}
 
 <!---<div id="videoModal" class="reveal-modal large" data-reveal="">
