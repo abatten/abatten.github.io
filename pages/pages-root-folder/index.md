@@ -68,7 +68,7 @@ homepage: true
 ### I measure the Universe's expansion, track satellites around Earth and simulate the magnetic fields of the brain.
 {: style="text-align: center;"}
 
-#### Currently a postdoctoral researcher a Swinburne University of Techology
+#### Currently a Neuroimaging Informatics Fellow at Swinburne Neuroimaging
 {: style="text-align: center;"}
 
 <!---<div id="videoModal" class="reveal-modal large" data-reveal="">
